@@ -41,3 +41,6 @@ syntax on
 
 " load everything else in its own config file
 runtime! config/**/*
+
+" My local overrides come last
+runtime! config/_local_override.vim
