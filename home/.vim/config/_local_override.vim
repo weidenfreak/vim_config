@@ -49,8 +49,8 @@ autocmd User Rails        setlocal shiftwidth=2
 autocmd User Rails        setlocal tabstop=2
 autocmd User Rails        setlocal softtabstop=2
 
-"
-" Configure the PHPDoc Vim Script
-"
-let g:pdv_cfg_Author = ""
-imap <C-p> :exe PhpDoc()<cr> 
+" Keep Block visually marked when indenting
+nmap > ><CR>gv
+nmap < <<CR>gv
+vmap > ><CR>gv
+vmap < <<CR>gv
