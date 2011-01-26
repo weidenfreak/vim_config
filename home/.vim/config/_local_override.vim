@@ -7,10 +7,19 @@ set softtabstop=2
 set tabstop=2
 set shiftwidth=2
 
-set columns=180
-set lines=50
+set columns=200
+set lines=60
 
+" No Wrapping whatsoever
+set textwidth=0
+set nolinebreak
+set nowrap
+
+" New Font
 set guifont=Inconsolata-dz:h12.00
+
+" No Auto-Wrap!
+set formatoptions=crqn21
 
 "
 " No see-through
@@ -21,6 +30,7 @@ endif
 
 "
 "  NERDTree (KEY: ,d)
+"  Auto-Open
 "
 let NERDTreeShowBookmarks=1
 " autocmd VimEnter * exe 'NERDTree' | wincmd l 
