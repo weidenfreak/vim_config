@@ -53,14 +53,10 @@ Currently, this vim configuration ships with the following plugins:
 * [BufExplorer](http://github.com/vim-scripts/bufexplorer.zip "BufExplorer at
   github")
 * [BufOnly](http://github.com/duff/vim-bufonly "BufOnly at github")
-* [CamelCaseMotion](http://github.com/vim-scripts/camelcasemotion
-  "CamelCaseMotion at github")
 * [Command-T](http://github.com/wincent/Command-T "Command-T at github")
 * [Conque](http://github.com/rson/vim-conque "Conque at github")
-* [dbext](http://github.com/vim-scripts/dbext.vim "dbext at github")
 * [Endwise](http://github.com/tpope/vim-endwise "vim-endwise at github")
 * [Fugitive](http://github.com/tpope/vim-fugitive "vim-fugitive at github")
-* [Gist.vim](http://github.com/vim-scripts/Gist.vim "gist.vim at github")
 * [NERDCommenter](http://github.com/scrooloose/nerdcommenter "nerdcommenter at
   github")
 * [NERDTree](http://github.com/scrooloose/nerdtree "nerdtree at github")
@@ -73,7 +69,6 @@ Currently, this vim configuration ships with the following plugins:
 * [Space.vim](http://github.com/spiiph/vim-space "vim-space at github")
 * [Surround.vim](http://github.com/tpope/vim-surround "vim-surround at github")
 * [Syntastic](http://github.com/scrooloose/syntastic "syntastic at github")
-* [TailMinusF](http://github.com/vim-scripts/TailMinusF "tailminusf at github")
 * [VimOutliner](https://github.com/Raimondi/vimoutliner "vimoutliner at github")
 * [YankRing](http://github.com/chrismetcalf/vim-yankring "yankring at github")
 

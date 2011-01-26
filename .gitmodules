@@ -75,4 +75,7 @@
 	url = git://github.com/kana/vim-textobj-user.git
 [submodule "home/.vim/bundle/vim-textobj-rubyblock"]
 	path = home/.vim/bundle/vim-textobj-rubyblock
-	url = git://github.com/nelstrom/vim-textobj-rubyblock.git
+  url = git://github.com/nelstrom/vim-textobj-rubyblock.git
+[submodule "home/.vim/bundle/php-vip"]
+	path = home/.vim/bundle/php-vip
+	url = git://github.com/tobyS/vip.git
