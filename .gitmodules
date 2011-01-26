@@ -67,15 +67,6 @@
 [submodule "home/.vim/bundle/bufexplorer"]
 	path = home/.vim/bundle/bufexplorer
 	url = git://github.com/vim-scripts/bufexplorer.zip.git
-[submodule "home/.vim/bundle/dbext"]
-	path = home/.vim/bundle/dbext
-	url = git://github.com/vim-scripts/dbext.vim.git
-[submodule "home/.vim/bundle/gist"]
-	path = home/.vim/bundle/gist
-	url = git://github.com/mattn/gist-vim.git
-[submodule "home/.vim/bundle/tailminusf"]
-	path = home/.vim/bundle/tailminusf
-	url = git://github.com/vim-scripts/TailMinusF.git
 [submodule "home/.vim/bundle/yankring"]
 	path = home/.vim/bundle/yankring
 	url = git://github.com/chrismetcalf/vim-yankring.git
