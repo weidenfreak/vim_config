@@ -5,8 +5,11 @@
 - Removed Dbext
 - Removed TailMinusF
 - Removed CamelCaseMotion
+- Removed Outliner
 + Add [PHP-VIP] (https://github.com/tobyS/vip)
++ Add [matchit] (https://github.com/javanthropus/vim-matchit)
 + Added railscast theme
++ Added keyconfig overrirdes (see config/_local_overrid.vim)
 
 ## INTRODUCTION ##
 
