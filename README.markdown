@@ -1,5 +1,13 @@
 # VIM\_CONFIG #
 
+## Modifications in this fork ##
+- Removed Gist
+- Removed Dbext
+- Removed TailMinusF
+- Removed CamelCaseMotion
++ Add [PHP-VIP] (https://github.com/tobyS/vip)
++ Added railscast theme
+
 ## INTRODUCTION ##
 
 This is a vim configuration created by [duwanis](http://www.duwanis.com

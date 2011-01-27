@@ -98,3 +98,5 @@ vmap < <<CR>gv
 " Remap BufferExplorer because it doesnt work in bufexplorer.vim ...
 "
 nmap <leader>b :BufExplorer<CR>
+
+
