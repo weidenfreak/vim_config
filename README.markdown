@@ -6,10 +6,12 @@
 - Removed TailMinusF
 - Removed CamelCaseMotion
 - Removed Outliner
+- Removed Command-T
++ Add [FuzzyFinder] (https://github.com/vim-scripts/FuzzyFinder)
 + Add [PHP-VIP] (https://github.com/tobyS/vip)
 + Add [matchit] (https://github.com/javanthropus/vim-matchit)
-+ Added railscast theme
-+ Added keyconfig overrirdes (see config/_local_overrid.vim)
++ Added railscasts theme
++ Added keyconfig overrides (see config/_local_override.vim)
 
 ## INTRODUCTION ##
 
