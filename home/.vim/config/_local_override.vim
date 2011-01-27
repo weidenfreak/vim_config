@@ -115,3 +115,14 @@ nmap <leader>b :BufExplorer<CR>
 :imap <M-j> :m .+<CR>
 :vmap <M-Down> :m .+<CR> 
 :vmap <M-j> :m .+<CR>
+
+"
+" Since I constantly type :W instead of :w remap that
+"
+command W w
+
+"
+" ,< and ,> for bufferjumps
+"
+:map <Leader>> :bnext<CR>
+:map <Leader>< :bprevious<CR>
