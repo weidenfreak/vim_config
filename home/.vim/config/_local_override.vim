@@ -99,4 +99,38 @@ vmap < <<CR>gv
 "
 nmap <leader>b :BufExplorer<CR>
 
+" Copied from https://gist.github.com/578787
+"my own line movement kram
+"Alt+Up, Alt+k moves line up
+:nmap <A-Up> :m .-2<Enter> 
+:nmap <A-k> :m .-2<Enter>
+:imap <A-Up> :m .-2<Enter> 
+:imap <A-k> :m .-2<Enter>
+:vmap <A-Up> :m .-2<Enter> 
+:vmap <A-k> :m .-2<Enter>
+
+"Alt+Down, Alt+j moves line down
+:nmap <A-Down> :m .+<Enter> 
+:nmap <A-j> :m .+<Enter>
+:imap <A-Down> :m .+<Enter> 
+:imap <A-j> :m .+<Enter>
+:vmap <A-Down> :m .+<Enter> 
+:vmap <A-j> :m .+<Enter>
+
+"Ctrl+Alt+Up, Ctrl+Alt+k copies line above current line
+:nmap <C-A-Up> :co .-1<Enter> 
+:nmap <C-A-k> :co .-1<Enter>
+:imap <C-A-Up> :co .-1<Enter> 
+:imap <C-A-k> :co .-1<Enter>
+:vmap <C-A-Up> :co .-1<Enter> 
+:vmap <C-A-k> :co .-1<Enter>
+
+"Ctrl+Alt+Down, Ctrl+Alt+j copies line below current line
+:nmap <C-A-Down> :co .<Enter> 
+:nmap <C-A-j> :co .<Enter>
+:imap <C-A-Down> :co .<Enter> 
+:imap <C-A-j> :co .<Enter>
+:vmap <C-A-Down> :co .<Enter> 
+:vmap <C-A-j> :co .<Enter>
+
 
