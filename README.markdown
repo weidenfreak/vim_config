@@ -7,6 +7,7 @@
 - Removed CamelCaseMotion
 - Removed Outliner
 - Removed Command-T
+- removed bufexplorer
 + Add [FuzzyFinder] (https://github.com/vim-scripts/FuzzyFinder)
 + Add [PHP-VIP] (https://github.com/tobyS/vip)
 + Add [matchit] (https://github.com/javanthropus/vim-matchit)

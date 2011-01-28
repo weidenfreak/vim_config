@@ -58,9 +58,6 @@
 [submodule "home/.vim/bundle/asneeded"]
 	path = home/.vim/bundle/asneeded
 	url = git://github.com/vim-scripts/AsNeeded.git
-[submodule "home/.vim/bundle/bufexplorer"]
-	path = home/.vim/bundle/bufexplorer
-	url = git://github.com/vim-scripts/bufexplorer.zip.git
 [submodule "home/.vim/bundle/yankring"]
 	path = home/.vim/bundle/yankring
 	url = git://github.com/chrismetcalf/vim-yankring.git
