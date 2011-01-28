@@ -85,3 +85,6 @@
 [submodule "home/.vim/bundle/l9"]
 	path = home/.vim/bundle/l9
 	url = https://github.com/vim-scripts/L9.git
+[submodule "home/.vim/bundle/xmledit"]
+	path = home/.vim/bundle/xmledit
+	url = https://github.com/sukima/xmledit.git
