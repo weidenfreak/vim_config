@@ -119,7 +119,7 @@ nmap <leader>b :BufExplorer<CR>
 "
 " Since I constantly type :W instead of :w remap that
 "
-command W w
+command! W w
 
 "
 " ,< and ,> for bufferjumps
