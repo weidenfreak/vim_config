@@ -11,6 +11,7 @@
 + Add [PHP-VIP] (https://github.com/tobyS/vip)
 + Add [matchit] (https://github.com/javanthropus/vim-matchit)
 + Add [xmledit] (https://github.com/sukima/xmledit/)
++ Add [tabbar] (https://github.com/vim-scripts/TabBar)
 + Added railscasts theme
 + Added keyconfig overrides (see config/_local_override.vim)
 
