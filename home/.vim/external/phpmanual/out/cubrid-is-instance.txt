@@ -1,0 +1,36 @@
+cubrid_is_instance -- Is used to check whether the instance
+
+  int cubrid_is_instance(resource conn_identifier, string oid)~
+
+The |cubrid_is_instance| function is used to check whether the instance
+pointed by the given {oid} exists or not.
+
+{conn_identifier} Connection identifier.
+
+{oid} Oid of the instance that you want to check the existence.
+
+1, if such instance exists;
+
+0, if such instance does not exist;
+
+-1, in case of error
+
+|cubrid_is_instance| example
+
+<?php >
+  $target_oid = cubrid_get ($con, $oid, "customer");
+  $res = cubrid_is_instance ($con, $target_oid);
+  if ($res == 1) {
+     echo "$oid is presents.\n";
+  } else if ($res == 0){
+     echo "$oid is not presents.\n";
+  } else {
+     echo "error\n";
+  }
+?>
+
+
+
+|cubrid_drop| |cubrid_get_class_name|
+
+vim:ft=help:

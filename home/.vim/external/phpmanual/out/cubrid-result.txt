@@ -1,0 +1,46 @@
+cubrid_result -- Returns the value of a specific field in a specific row
+
+  string cubrid_result(resource result, int row [, mixed field = 0])~
+
+This function returns the value of a specific field in a specific row from a
+result set.
+
+{result} {result} comes from a call to |cubrid_execute|
+
+{row} The row number from the result that is being retrieved. Row numbers
+start at 0.
+
+{field} The name or offset of the {field} being retrieved. It can be the
+field's offset, the field's name, or the field's table dot field name
+(tablename.fieldname). If the column name has been aliased ('select foo as bar
+from...'), use the alias instead of the column name. If undefined, the first
+field is retrieved.
+
+Value of a specific field, on success (NULL if value if null).
+
+FALSE on failure.
+
+|cubrid_result| example
+
+<?php >
+      $link = cubrid_connect("localhost", 30000, "demodb2", "dba", "");
+      if (!$link)
+      {
+          die('Could not connect.');
+      }
+      $query = 'SELECT id, name, address, salary FROM employees';
+      $result = cubrid_execute($link, $query);
+      if ($result) 
+      {
+          echo "The address value of third record is ".cubrid_result($result, 2, 2);
+          
+          cubrid_close_request($result); 
+      }
+?>
+
+The above example will output:
+
+  Result:
+  The address value of third record is 81254, CA
+
+vim:ft=help:

@@ -1,0 +1,33 @@
+cubrid_column_types -- Gets column types
+
+  array cubrid_column_types(resource req_identifier)~
+
+The |cubrid_column_types| function gets column types of query results by using
+{req_identifier}.
+
+{req_identifier} Request identifier.
+
+Array of string which containing column types, when process is successful.
+
+FALSE, when process is unsuccessful.
+
+|cubrid_column_types| example
+
+<?php >
+  $req = cubrid_execute ($con, "select * from person");
+  if ($req) {
+     $coltypes = cubrid_column_types ($req);
+     $colnames = cubrid_column_names ($req);
+     while (list ($key, $coltype) = each ($coltypes))
+        echo $coltype;
+     while (list ($key, $colname) = each ($colnames))
+        echo $colname;
+     cubrid_close_request ($req);
+  }
+?>
+
+
+
+|cubrid_column_names| |cubrid_prepare| |cubrid_execute|
+
+vim:ft=help:

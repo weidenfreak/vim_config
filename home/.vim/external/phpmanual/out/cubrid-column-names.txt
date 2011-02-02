@@ -1,0 +1,33 @@
+cubrid_column_names -- Is used to get the column names
+
+  array cubrid_column_names(resource req_identifier)~
+
+The |cubrid_column_names| function is used to get the column names of the
+query result by using {req_identifier}.
+
+{req_identifier} Request identifier.
+
+Array of string which containing column names, when process is successful.
+
+FALSE, when process is unsuccessful.
+
+|cubrid_column_names| example
+
+<?php >
+  $req = cubrid_execute ($con, "select * from person");
+  if ($req) {
+     $coltypes = cubrid_column_types ($req);
+     $colnames = cubrid_column_names ($req);
+     while (list ($key, $coltype) = each ($coltypes))
+        echo $coltype;
+     while (list ($key, $colname) = each ($colnames))
+        echo $colname;
+     cubrid_close_request ($req);
+  }
+?>
+
+
+
+|cubrid_prepare| |cubrid_execute| |cubrid_column_types|
+
+vim:ft=help:

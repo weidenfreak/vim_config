@@ -1,0 +1,25 @@
+cubrid_get_client_info -- Returns a string that represents the client library
+version
+
+  string cubrid_get_client_info()~
+
+This function returns a string that represents the client library version.
+
+
+
+A string that represents the client library version; on success.
+
+FALSE on failure.
+
+|cubrid_get_client_info| example
+
+<?php >
+  printf("CUBRID client info: %s\n", cubrid_get_client_info());
+?>
+
+The above example will output:
+
+  Result:
+  CUBRID client info: 8.2.1
+
+vim:ft=help:

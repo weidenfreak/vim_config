@@ -1,0 +1,77 @@
+cubrid_bind -- Is used to bind values
+
+  bool cubrid_bind(resource req_identifier, int bind_index, string bind_value [, string bind_value_type])~
+
+The |cubrid_bind| function is used to bind values in a |cubrid_prepare|
+variable, a various types in PHP and corresponding types in SQL. If
+bind_value_type is not given, string will be the default.
+
+Known issue: If column data type is CLOB, binding parameter will fail. This
+bug will fixed later, better use BLOB now.
+
+The following table shows the types of substitute values.
+
+CUBRID Bind Date Types Support Bind Type Corresponding SQL Type Supported
+STRING CHAR, VARCHAR NCHAR NCHAR, NVARCHAR BIT BIT, VARBIT NUMERIC or NUMBER
+SHORT, INT, NUMERIC FLOAT FLOAT DOUBLE DOUBLE TIME TIME DATE DATE TIMESTAMP
+TIMESTAMP OBJECT OBJECT BLOB BLOB CLOB CLOB NULL NULL Not supported SET SET
+MULTISET MULTISET SEQUENCE SEQUENCE
+
+{req_identifier} Request identifier as a result of |cubrid_prepare|.
+
+{bind_index} Index for binding.
+
+{bind_value} Actual value for binding.
+
+{bind_index} A type of the value to bind. (It is omitted by default. Thus,
+system internally use string by default. However, you need to specify the
+exact type of the value as an argument when they are NCHAR, BIT, or
+BLOB/CLOB).
+
+TRUE, when process is successful.
+
+FALSE, when process is unsuccessful.
+
+Version Description 8.3.1 Added BLOB/CLOB data types support.
+
+|cubrid_bind| example
+
+<?php >
+  $con = cubrid_connect("dbsvr.cubrid.com", 12345, "demodb");
+  if ($con) {
+      $sql = "insert into tbl values (?,?,?)"; 
+      $req = cubrid_prepare($con, $sql, CUBRID_INCLUDE_OID); 
+  
+      $i = 0;
+      while ($i < 2) { 
+          $res = cubrid_bind($req, 1, "1", "NUMBER"); 
+          $res = cubrid_bind($req, 2, "2"); 
+          $res = cubrid_bind($req, 3, "04:22:34 PM 08/07/2007"); 
+          $res = cubrid_execute( $req );  
+          $i = $i + 1; 
+      }
+  } 
+?>
+
+
+
+|cubrid_bind| BLOB/CLOB example
+
+<?php >
+  $con = cubrid_connect ("localhost", 33000, "foo");
+  if ($con) {
+      $sql = "INSERT INTO php_cubrid_lob_test(doc_content) VALUES(?)"; 
+      $req = cubrid_prepare($con, $sql); 
+  
+      $fp = fopen("book.txt", "rb");
+  
+      cubrid_bind($req, 1, $fp, "blob"); 
+      cubrid_execute($req);  
+  }
+?>
+
+
+
+|cubrid_execute| |cubrid_prepare|
+
+vim:ft=help:

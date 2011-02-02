@@ -1,0 +1,32 @@
+cubrid_list_dbs -- Returns an array with the list of all existing Cubrid
+databases
+
+  array cubrid_list_dbs(resource conn_identifier)~
+
+This function returns an array with the list of all existing Cubrid databases.
+
+{conn_identifier} The CUBRID connection.
+
+An numeric array with all existing Cubrid databases; on success.
+
+FALSE on failure.
+
+|cubrid_list_dbs| example
+
+<?php >
+      $link = cubrid_connect("localhost", 30000, "demodb2", "dba", "");
+      if (!$link)
+      {
+          die('Could not connect.');
+      }
+      echo "CUBRID databases:<br>";
+      print_r(cubrid_list_dbs($link));
+?>
+
+The above example will output:
+
+  Result:
+  CUBRID databases:
+  Array ( [0] => demodb2 [1] => cubrid3 )
+
+vim:ft=help:

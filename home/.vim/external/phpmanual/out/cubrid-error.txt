@@ -1,0 +1,32 @@
+cubrid_error -- Is used to get the error message
+
+  string cubrid_error()~
+
+The |cubrid_error| function is used to get the error message that occurred
+during the use of CUBRID API. Usually, it gets error message when API returns
+false as its return value.
+
+This function has no parameters.
+
+Error message that occurred.
+
+
+
+|cubrid_error| example
+
+<?php >
+  $req = cubrid_execute($con, "select id, name from person");
+  if ($req) {
+      while (list ($id, $name) = cubrid_fetch($req)) 
+      echo $id, $name;
+  } else {
+      echo "Error Code: ", cubrid_errno($con);
+      echo "Error Message: ", cubrid_error($con);
+  }
+?>
+
+
+
+|cubrid_errno| |cubrid_error_code| |cubrid_error_msg|
+
+vim:ft=help:

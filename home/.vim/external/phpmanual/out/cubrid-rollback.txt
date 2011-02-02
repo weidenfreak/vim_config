@@ -1,0 +1,35 @@
+cubrid_rollback -- Executes rollback on the transaction
+
+  bool cubrid_rollback(resource conn_identifier)~
+
+The |cubrid_rollback| function executes rollback on the transaction pointed by
+{conn_handle}, currently in progress.
+
+Connection to server is closed after calling |cubrid_rollback|. Connection
+handle, however, is still valid.
+
+{conn_identifier} Connection identifier.
+
+TRUE, when process is successful.
+
+FALSE, when process is unsuccessful.
+
+|cubrid_rollback| example
+
+<?php >
+  $req = cubrid_execute ($oid, "insert into person values (2,’John’)");
+  if ($req) {
+     cubrid_close_request ($req);
+     if ($failed) {
+        cubrid_rollback ($con);
+     } else {
+        cubrid_commit ($con);
+     }
+  }
+?>
+
+
+
+|cubrid_commit| |cubrid_disconnect|
+
+vim:ft=help:

@@ -1,0 +1,49 @@
+cubrid_fetch_object -- Returns an object with the column names
+
+  object cubrid_fetch_object(resource result [, string class_name [, array params]])~
+
+This function returns an object with the column names of the result set as
+properties. The values of these properties are extracted from the current row
+of the result.
+
+{result} {result} comes from a call to |cubrid_execute|
+
+{class_name} The name of the class to instantiate, set the properties of and
+return. If not specified, a stdClass object is returned.
+
+{params} An optional array of parameters to pass to the constructor for
+{class_name} objects.
+
+An object, when process is successful.
+
+FALSE on failure.
+
+|cubrid_fetch_object| example
+
+<?php >
+      $link = cubrid_connect("localhost", 30000, "demodb2", "dba", "");
+      if (!$link)
+      {
+          die('Could not connect.');
+      }
+      $query = 'SELECT name, address, salary FROM employees';
+      $result = cubrid_execute($link, $query);
+      if ($result) 
+      {
+          $row = cubrid_fetch_object($result);
+          echo $row->name."<BR>";
+          echo $row->address."<BR>";
+          echo $row->salary;
+          
+          cubrid_close_request($result); 
+      }
+?>
+
+The above example will output:
+
+  Result:
+  Peter
+  1st Avenue, New York
+  1000.0000000000000000
+
+vim:ft=help:

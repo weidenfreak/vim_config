@@ -1,0 +1,31 @@
+cubrid_get_class_name -- Is used to get the class name
+
+  string cubrid_get_class_name(resource conn_identifier, string oid)~
+
+The |cubrid_get_class_name| function is used to get the class name from {oid}.
+
+{conn_identifier} Connection identifier.
+
+{oid} Oid of the instance that you want to check the existence.
+
+Class name when process is successful.
+
+FALSE, when process is unsuccessful.
+
+|cubrid_get_class_name| example
+
+<?php >
+  $target_oid = cubrid_get ($con, $oid, "customer");
+  $class_name = cubrid_get_class_name ($con, $target_oid);
+  if ($class_name) {
+    echo "class name of $oid is $class_name\n";
+  } else {
+    echo "error\n";
+  }
+?>
+
+
+
+|cubrid_is_instance| |cubrid_drop|
+
+vim:ft=help:

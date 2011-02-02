@@ -1,0 +1,66 @@
+cubrid_field_seek -- Moves the result set cursor to the specified field offset
+
+  bool cubrid_field_seek(resource result, int field_offset)~
+
+This function moves the result set cursor to the specified field offset. This
+offset is used by |cubrid_fetch_field| if it doesn't include a field offset.
+It returns TRUE on success or FALSE on failure.
+
+{result} {result} comes from a call to |cubrid_execute|
+
+{field_offset} The numerical field offset. The {field_offset} starts at 0. If
+{field_offset} does not exist, an error of level E_WARNING is also issued.
+
+TRUE on success.
+
+FALSE on failure.
+
+|cubrid_field_seek| example
+
+<?php >
+      $link = cubrid_connect("localhost", 30000, "demodb2", "dba", "");
+      if (!$link)
+      {
+          die('Could not connect.');
+      }
+      $query = 'SELECT id, name, address, salary FROM employees';
+      $result = cubrid_execute($link, $query);
+      if ($result) 
+      {
+          cubrid_field_seek($result,2);
+          $meta = cubrid_fetch_field($result);
+          if (!$meta) 
+          {
+              echo "No information available<br />\n";
+          }
+          echo "<pre>
+          max_length:        $meta->max_length
+          multiple_key:        $meta->multiple_key
+          name:            $meta->name
+          not_null:        $meta->not_null
+          numeric:        $meta->numeric
+          table:            $meta->table
+          type:            $meta->type
+          default:        $meta->def
+          unique_key:        $meta->unique_key
+          </pre>";
+  
+  
+          cubrid_close_request($result); 
+      }
+?>
+
+The above example will output:
+
+  Result:
+      max_length:        21
+      multiple_key:        1
+      name:            address
+      not_null:        0
+      numeric:            0
+      table:            employees
+      type:            STRING
+      default:        
+      unique_key:        0
+
+vim:ft=help:

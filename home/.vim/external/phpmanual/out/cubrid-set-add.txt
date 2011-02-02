@@ -1,0 +1,31 @@
+cubrid_set_add -- Is used to insert a single element
+
+  bool cubrid_set_add(resource conn_identifier, string oid, string attr_name, string set_element)~
+
+The |cubrid_set_add| function is used to insert a single element to a set type
+attribute (set, multiset) you requested.
+
+{conn_identifier} Connection identifier.
+
+{oid} Oid of the instance you want to work with.
+
+{attr_name} Name of the attribute you want to insert an element.
+
+{set_element} Content of the element you want to insert.
+
+TRUE, when process is successful.
+
+FALSE, when process is unsuccessful.
+
+|cubrid_set_add| example
+
+<?php >
+  cubrid_set_add ($con, $oid, "friend", "James");
+  cubrid_set_add ($con, $oid, "friend", "Michael");
+?>
+
+
+
+|cubrid_seq_drop|
+
+vim:ft=help:

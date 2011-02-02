@@ -1,0 +1,37 @@
+cubrid_real_escape_string -- Returns the escaped string version of the given
+string
+
+  string cubrid_real_escape_string(string unescaped_string [, resource conn_identifier])~
+
+This function returns the escaped string version of the given string. It
+pre-appends backslashes to the following characters: '. This function must
+always (with few exceptions) be used to make data safe before sending a query
+to CUBRID.
+
+{unescaped_string} The string that is to be escaped.
+
+{conn_identifier} The CUBRID connection. If the connection identifier is not
+specified, the last link opened by |cubrid_connect| is assumed.
+
+Escaped string version of the given string, on success.
+
+FALSE on failure.
+
+|cubrid_real_escape_string| example
+
+<?php >
+      $user = "'username'";
+      $password = "\"pass\"";
+      $query = sprintf("SELECT * FROM users WHERE user='%s' AND password='%s'",
+              cubrid_real_escape_string($user),
+              cubrid_real_escape_string($password));
+      
+      echo $query;
+?>
+
+The above example will output:
+
+  Result:
+  SELECT * FROM users WHERE user='\'username\'' AND password='"pass"'
+
+vim:ft=help:

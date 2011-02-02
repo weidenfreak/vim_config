@@ -1,0 +1,37 @@
+cubrid_send_glo -- Is used to read data from glo
+
+  int cubrid_send_glo(resource conn_identifier, string oid)~
+
+The |cubrid_send_glo| function is used to read data from glo instance and
+sends it to the PHP standard output.
+
+{conn_identifier} Connection identifier.
+
+{oid} Oid of the glo instance that you want to read data from.
+
+TRUE, when process is successful.
+
+FALSE, when process is unsuccessful.
+
+|cubrid_send_glo| example
+
+<?php >
+  $req = cubrid_execute ($con, "select image from person where id =1");
+  if ($req) {
+    list ($oid) = cubrid_fetch($req);
+    cubrid_close_request($req);
+    Header ("Content-type: image/jpeg");
+    cubrid_send_glo ($con, $oid);
+  }
+?>
+
+
+
+For backward compatibility, the following deprecated alias may be used:
+|cubrid_send_glo|
+
+This function is removed from CUBRID 3.1.
+
+|cubrid_new_glo| |cubrid_save_to_glo| |cubrid_load_from_glo|
+
+vim:ft=help:

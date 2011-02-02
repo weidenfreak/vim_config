@@ -1,0 +1,30 @@
+PDO::cubrid_schema -- Is used to get the requested schema information
+
+  array PDO::cubrid_schema(int schema_type [, string table_name [, string col_name]])~
+
+The |cubrid_schema| function is used to get the requested schema information
+from database. You have to designate {table_name}, if you want to get
+information on certain table, {col_name}, if you want to get information on
+certain column (can be used only with PDO::CUBRID_SCH_COL_PRIVILEGE).
+
+{schema_type} Schema type that you want to know.
+
+{table_name} Table you want to know the schema of.
+
+{col_name} Column you want to know the schema of.
+
+Array containing the schema information, when process is successful;
+
+FALSE, when process is unsuccessful
+
+A |PDO::cubrid_schema| example This example shows how to get primary keys of
+table game.
+
+<?php >
+  $pk_list = $dbh->cubrid_schema(PDO::CUBRID_SCH_PRIMARY_KEY, "game");
+  print_r($pk_list);
+?>
+
+
+
+vim:ft=help:

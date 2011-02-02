@@ -1,0 +1,45 @@
+cubrid_field_flags -- Returns a string with the flags of the given field
+offset
+
+  string cubrid_field_flags(resource result, int field_offset)~
+
+This function returns a string with the flags of the given field offset
+separated by space. You can split the returned value using explode. The
+possible flags could be: not_null, primary_key, unique_key, foreign_key,
+auto_increment, shared, reverse_index, reverse_unique and timestamp.
+
+{result} {result} comes from a call to |cubrid_execute|
+
+{field_offset} The numerical field offset. The {field_offset} starts at 0. If
+{field_offset} does not exist, an error of level E_WARNING is also issued.
+
+A string with flags, when process is successful.
+
+FALSE when invalid field_offset value.
+
+-1 if SQL sentence is not SELECT.
+
+|cubrid_field_flags| example
+
+<?php >
+      $link = cubrid_connect("localhost", 30000, "demodb2", "dba", "");
+      if (!$link)
+      {
+          die('Could not connect.');
+      }
+      $query = 'SELECT id, name, address, salary FROM employees';
+      $result = cubrid_execute($link, $query);
+      if ($result) 
+      {
+          $flags = cubrid_field_flags($result, 0);
+          print_r(explode(' ', $flags));
+          cubrid_close_request($result); 
+      }
+?>
+
+The above example will output:
+
+  Result:
+  Array ( [0] => not_null [1] => unique_key [2] => auto_increment )
+
+vim:ft=help:

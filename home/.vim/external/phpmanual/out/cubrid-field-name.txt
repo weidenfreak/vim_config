@@ -1,0 +1,42 @@
+cubrid_field_name -- Returns the name of the specified field index
+
+  string cubrid_field_name(resource result, int field_offset)~
+
+This function returns the name of the specified field index on success or it
+returns FALSE on failure.
+
+{result} {result} comes from a call to |cubrid_execute|
+
+{field_offset} The numerical field offset. The {field_offset} starts at 0. If
+{field_offset} does not exist, an error of level E_WARNING is also issued.
+
+Name of specified field index, on success.
+
+FALSE on failure.
+
+|cubrid_field_name| example
+
+<?php >
+      $link = cubrid_connect("localhost", 30000, "demodb2", "dba", "");
+      if (!$link)
+      {
+          die('Could not connect.');
+      }
+      $query = 'SELECT id, name, address, salary FROM employees';
+      $result = cubrid_execute($link, $query);
+      if ($result) 
+      {
+          echo cubrid_field_name($result, 0)."<BR>";
+          echo cubrid_field_name($result, 2);
+          
+          cubrid_close_request($result); 
+      }
+?>
+
+The above example will output:
+
+  Result:
+  id
+  address
+
+vim:ft=help:

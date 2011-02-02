@@ -1,0 +1,39 @@
+cubrid_free_result -- Frees the memory occupied by the result data
+
+  bool cubrid_free_result(resource req_identifier)~
+
+This function frees the memory occupied by the result data. It returns TRUE on
+success or FALSE on failure.
+
+{req_identifier} This is the request identifier.
+
+TRUE on success.
+
+FALSE on failure.
+
+|cubrid_free_result| example
+
+<?php >
+      $link = cubrid_connect("localhost", 30000, "demodb2", "dba", "");
+      if (!$link)
+      {
+          die('Could not connect.');
+      }
+      $query = 'SELECT id, name, address, salary FROM employees';
+      $result = cubrid_execute($link, $query);
+      if ($result) 
+      {
+          $row = cubrid_fetch_assoc($result);
+          /* Now we free up the result and continue on with our script */
+          cubrid_free_result($result);
+          echo $row['id']."<br>".$row['address'];
+      }
+?>
+
+The above example will output:
+
+  Result:
+  1
+  1st Avenue, New York
+
+vim:ft=help:

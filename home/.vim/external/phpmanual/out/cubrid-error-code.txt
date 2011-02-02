@@ -1,0 +1,33 @@
+cubrid_error_code -- Is used to get the error code
+
+  int cubrid_error_code()~
+
+The |cubrid_error_code| function is used to get the error code of the error
+that occurred during the API execution. Usually, it gets the error code when
+API returns false as its return value.
+
+This function has no parameters.
+
+Error code of the error that occurred, or 0 (zero) if no error occurred.
+
+
+
+|cubrid_error_code| example
+
+<?php >
+  $req = cubrid_execute ($con, "select id, name from person");
+  if ($req) {
+     while (list ($id, $name) = cubrid_fetch($req)) 
+         echo $id, $name;
+  } else {
+      echo "Error Code: ", cubrid_error_code ();
+      echo "Error Facility: ", cubrid_error_code_facility ();
+      echo "Error Message: ", cubrid_error_msg ();
+  }
+?>
+
+
+
+|cubrid_error_code_facility| |cubrid_error_msg|
+
+vim:ft=help:

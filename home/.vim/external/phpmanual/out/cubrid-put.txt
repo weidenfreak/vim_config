@@ -1,0 +1,44 @@
+cubrid_put -- Is used to update an attribute
+
+  int cubrid_put(resource conn_identifier, string oid [, string attr, mixed value])~
+
+The |cubrid_put| function is used to update an attribute of the instance of
+the given {oid}.
+
+You can update single attribute by using string data type to set {attr}. In
+such case, you can use integer, float-point, or string type data for the
+{value} argument. To update multiple number of attributes, you can disregard
+the {attr} argument, and set {value} argument with associative array data
+type. However, you cannot use the method for attribute of collection type. You
+have to use APIs related to collection type (|cubrid_set_add|,
+|cubrid_set_drop|, etc) when you want to use |cubrid_put| on collection typed
+attribute.
+
+{conn_identifier} Connection identifier.
+
+{oid} Oid of the instance that you want to update.
+
+{attr} Name of the attribute that you want to update.
+
+{value} New value that you want to assign to the attribute.
+
+TRUE, when process is successful.
+
+FALSE, when process is unsuccessful.
+
+|cubrid_put| example
+
+<?php >
+  $attrarray = cubrid_get ($con, $oid);
+  $attrarray["name"] = "New Name";
+  cubrid_put ($con, $oid, $attrarray);
+  cubrid_put ($con, $oid, "name", "New Name2");
+  cubrid_put ($con, $oid, "hobbies", array("aa", "bb"));
+?>
+
+
+
+|cubrid_get| |cubrid_set_add| |cubrid_set_drop| |cubrid_seq_insert|
+|cubrid_seq_drop| |cubrid_seq_put|
+
+vim:ft=help:

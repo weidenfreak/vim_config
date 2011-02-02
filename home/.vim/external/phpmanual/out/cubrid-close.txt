@@ -1,0 +1,38 @@
+cubrid_close -- Close CUBRID connection
+
+  bool cubrid_close([resource conn_identifier])~
+
+The |cubrid_close| function ends the transaction currently on process, closes
+the connection handle and disconnects from server. If there exists any request
+handle not closed yet at this point, it will be closed.
+
+{conn_identifier} The CUBRID connection identifier. If the connection
+identifier is not specified, the last connection opened by |cubrid_connect| is
+assumed.
+
+TRUE, when process is successful.
+
+FALSE, when process is unsuccessful.
+
+|cubrid_close| example
+
+<?php >
+  $con = cubrid_connect ("210.211.133.100", 12345, "demodb");
+  if ($con) {
+     echo "connected successfully";
+     $req = cubrid_execute ( $con, "insert into person values(1,'James')");
+     if ($req) {
+        cubrid_close_request ($req);
+        cubrid_commit ($con);
+     } else {
+        cubrid_rollback ($con);
+     }
+     cubrid_close ($con);
+  }
+?>
+
+
+
+|cubrid_connect|
+
+vim:ft=help:

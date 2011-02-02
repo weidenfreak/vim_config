@@ -1,0 +1,22 @@
+snmp2_getnext -- Description
+
+  string snmp2_getnext(string host, string community, string object_id [, string timeout [, string retries]])~
+
+
+
+This function is currently not documented; only its argument list is
+available.
+
+
+
+
+
+
+
+
+
+
+
+
+
+vim:ft=help:

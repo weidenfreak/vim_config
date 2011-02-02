@@ -1,0 +1,33 @@
+cubrid_seq_put -- Is used to update the content
+
+  bool cubrid_seq_put(resource conn_identifier, string oid, string attr_name, int index, string seq_element)~
+
+The |cubrid_seq_put| function is used to update the content of the requested
+element in a sequent type attribute.
+
+{conn_identifier} Connection identifier.
+
+{oid} Oid of the instance you want to work with.
+
+{attr_name} Name of the attribute that you want to update an element.
+
+{index} Index (1-based) of the element that you want to update.
+
+{seq_element} New content that you want to use for the update.
+
+TRUE, when process is successful.
+
+FALSE, when process is unsuccessful.
+
+|cubrid_seq_put| example
+
+<?php >
+  cubrid_seq_put ($con, $oid, "tel", 1, "02-3430-1200");
+  cubrid_seq_put ($con, $oid, "tel", 2, "02-3430-1300");
+?>
+
+
+
+|cubrid_seq_drop| |cubrid_seq_insert|
+
+vim:ft=help:

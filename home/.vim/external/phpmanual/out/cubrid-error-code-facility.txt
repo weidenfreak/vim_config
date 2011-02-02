@@ -1,0 +1,35 @@
+cubrid_error_code_facility -- Is used to get the facility code
+
+  int cubrid_error_code_facility()~
+
+The |cubrid_error_code_facility| function is used to get the facility code
+(level in which the error occurred) from the error code of the error that
+occurred during the API execution. Usually, you can get the error code when
+API returns false as its return value.
+
+This function has no parameters.
+
+Facility code of the error code that occurred: CUBRID_FACILITY_DBMS,
+CUBRID_FACILITY_CAS, CUBRID_FACILITY_CCI, CUBRID_FACILITY_CLIENT
+
+
+
+|cubrid_error_code_facility| example
+
+<?php >
+  $req = cubrid_execute ($con, "select id, name from person");
+  if ($req) {
+     while (list ($id, $name) = cubrid_fetch($req)) 
+        echo $id, $name;
+  } else {
+     echo "Error Code: ", cubrid_error_code ();
+     echo "Error Facility: ", cubrid_error_code_facility ();
+     echo "Error Message: ", cubrid_error_msg ();
+  }
+?>
+
+
+
+|cubrid_error_code| |cubrid_error_msg|
+
+vim:ft=help:

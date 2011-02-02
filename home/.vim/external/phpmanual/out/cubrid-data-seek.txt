@@ -1,0 +1,52 @@
+cubrid_data_seek -- Moves the internal row pointer of the CUBRID result
+
+  bool cubrid_data_seek(resource req_identifier, int row_number)~
+
+This function performs the moving of the internal row pointer of the CUBRID
+result (associated with the specified result identifier) to point to a
+specific row number. There are functions, such as |cubrid_fetch_assoc|, which
+use the current stored value of {row number}.
+
+{req_identifier} This is the request identifier.
+
+{row_number} This is the desired row number of the new result pointer.
+
+CUBRID_CURSOR_SUCCESS, on success.
+
+CUBRID_NO_MORE_DATA, when it is not a valid cursor location.
+
+FALSE on CAS error, row count is 0, or invalid offset.
+
+|cubrid_data_seek| example
+
+<?php >
+      $link = cubrid_connect("localhost", 30000, "demodb2", "dba", "");
+      if (!$link)
+      {
+          die('Could not connect.');
+      }
+      $query = 'SELECT name, address, salary FROM employees';
+      $result = cubrid_execute($link, $query);
+      if ($result) 
+      {
+          echo "seek to row 0 and fetching fields: ";
+          cubrid_data_seek($result, 0);
+          $row = cubrid_fetch_assoc($result);
+          echo $row["name"]."|". $row["address"]."|".$row["salary"]."<br>";
+  
+          echo "seek to row 2 and fetching fields: ";    
+          cubrid_data_seek($result, 2);
+          $row = cubrid_fetch_assoc($result);
+          echo $row["name"]."|". $row["address"]."|".$row["salary"]."<br>";
+  
+          cubrid_close_request($result); 
+      }
+?>
+
+The above example will output:
+
+  Result:
+  seek to row 0 and fetching fields: Peter|1st Avenue, New York|1000.0000000000000000
+  seek to row 2 and fetching fields: Peter Norton|81254, CA|19834.0000000000000000
+
+vim:ft=help:
