@@ -1,8 +1,0 @@
-#!/bin/bash
-#
-# Generates Helptags from a fresh SVN checkout of the PHP Documentation
-#
-# Need "sudo pear install XML_Parser" to work
-
-svn co http://svn.php.net/repository/phpdoc/modules/doc-en phpdoc
-php phpmanual_to_vimdoc.php

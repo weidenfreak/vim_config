@@ -28,5 +28,4 @@ setlocal dictionary+=~/.vim/bundle/php-vip/funclist.txt
 "
 " PHP Manual (siehe external/phpmanual)
 " 
-set runtimepath+=~/.vim/external/phpmanual/out
-autocmd BufNewFile,Bufread *.php set keywordprg="help"
+autocmd BufNewFile,Bufread *.php set keywordprg="pman"
