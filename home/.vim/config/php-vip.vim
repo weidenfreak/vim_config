@@ -28,4 +28,4 @@ setlocal dictionary+=~/.vim/bundle/php-vip/funclist.txt
 "
 " PHP Manual (siehe external/phpmanual)
 " 
-autocmd BufNewFile,Bufread *.php set keywordprg="pman"
+autocmd FileType php set keywordprg="pman"
