@@ -101,28 +101,25 @@ nmap <leader>b :BufExplorer<CR>
 
 " Copied modified from https://gist.github.com/578787
 " Alt+Up, Alt+k moves line up
-:nmap <M-Up> :m .-2<CR>
-:nmap <M-k> :m .-2<CR>
-:imap <M-Up> :m .-2<CR> 
-:imap <M-k> :m .-2<CR>
-:vmap <M-Up> :m .-2<CR> 
-:vmap <M-k> :m .-2<CR>
+nmap <M-Up> :m .-2<CR>
+nmap <M-k> :m .-2<CR>
+imap <M-Up> :m .-2<CR> 
+imap <M-k> :m .-2<CR>
+vmap <M-Up> :m .-2<CR> 
+vmap <M-k> :m .-2<CR>
 
 " Alt+Down, Alt+j moves line down
-:nmap <M-Down> :m .+<CR> 
-:nmap <M-j> :m .+<CR>
-:imap <M-Down> :m .+<CR> 
-:imap <M-j> :m .+<CR>
-:vmap <M-Down> :m .+<CR> 
-:vmap <M-j> :m .+<CR>
+nmap <M-Down> :m .+<CR> 
+nmap <M-j> :m .+<CR>
+imap <M-Down> :m .+<CR> 
+imap <M-j> :m .+<CR>
+vmap <M-Down> :m .+<CR> 
+vmap <M-j> :m .+<CR>
 
 "
 " Since I constantly type :W instead of :w remap that
 "
 command! W w
 
-"
-" ,< and ,> for bufferjumps
-"
-:map <Leader>> :bnext<CR>
-:map <Leader>< :bprevious<CR>
+" Show cursor line
+set cul
