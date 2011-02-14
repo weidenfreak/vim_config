@@ -125,7 +125,7 @@ command! W w
 set cul
 
 " Relative Numberse
-set relativenumbers
+set relativenumber
 
 " Wrap
 set wrap
