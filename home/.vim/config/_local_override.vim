@@ -123,3 +123,9 @@ command! W w
 
 " Show cursor line
 set cul
+
+" Relative Numberse
+set relativenumbers
+
+" Wrap
+set wrap
