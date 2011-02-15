@@ -9,6 +9,7 @@
 - Removed Command-T
 - Removed bufexplorer
 + Add [FuzzyFinder](https://github.com/vim-scripts/FuzzyFinder)
++ Add [Gsearch](https://github.com/vim-scripts/Greplace.vim)
 + Add [PHP-VIP](https://github.com/tobyS/vip)
 + Add [matchit](https://github.com/javanthropus/vim-matchit)
 + Add [xmledit](https://github.com/sukima/xmledit/)
