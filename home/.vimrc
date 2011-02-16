@@ -42,5 +42,8 @@ syntax on
 " load everything else in its own config file
 runtime! config/**/*
 
+" External Vim Tips scripts
+runtime! external/*.vim
+
 " My local overrides come last
 runtime! config/_local_override.vim
