@@ -28,8 +28,8 @@ set shiftwidth=2
 "
 " Height and Width
 "
-set columns=200
-set lines=60
+set columns=9999
+set lines=999
 
 "
 " No Wrapping whatsoever
@@ -93,11 +93,6 @@ nmap > ><CR>gv
 nmap < <<CR>gv
 vmap > ><CR>gv
 vmap < <<CR>gv
-
-"
-" Remap BufferExplorer because it doesnt work in bufexplorer.vim ...
-"
-nmap <leader>b :BufExplorer<CR>
 
 " Copied modified from https://gist.github.com/578787
 " Alt+Up, Alt+k moves line up
