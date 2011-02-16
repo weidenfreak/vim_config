@@ -9,14 +9,13 @@
 - Removed Command-T
 - Removed bufexplorer
 + Add [FuzzyFinder](https://github.com/vim-scripts/FuzzyFinder)
-+ Add [Gsearch](https://github.com/vim-scripts/Greplace.vim)
 + Add [PHP-VIP](https://github.com/tobyS/vip)
 + Add [matchit](https://github.com/javanthropus/vim-matchit)
 + Add [xmledit](https://github.com/sukima/xmledit/)
 + Add [tabbar](https://github.com/vim-scripts/TabBar)
 + Added railscasts theme
 + Added keyconfig overrides (see config/_local_override.vim)
-  + Add CopyMatches SCript from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard)
++ Add CopyMatches SCript from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard)
 
 ## INTRODUCTION ##
 
