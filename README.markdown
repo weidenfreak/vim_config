@@ -13,6 +13,7 @@
 + Add [matchit](https://github.com/javanthropus/vim-matchit)
 + Add [xmledit](https://github.com/sukima/xmledit/)
 + Add [tabbar](https://github.com/vim-scripts/TabBar)
++ Add [greplace](https://github.com/vim-scripts/greplace)
 + Added railscasts theme
 + Added keyconfig overrides (see config/_local_override.vim)
 + Add CopyMatches SCript from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard)
