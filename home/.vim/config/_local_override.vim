@@ -124,3 +124,6 @@ set relativenumber
 
 " Wrap
 set wrap
+
+" No macmeta ever!
+set nomacmeta
