@@ -124,6 +124,3 @@ set relativenumber
 
 " Wrap
 set wrap
-
-" MacVim allow Alt = <M-> Bindings
-set macmeta

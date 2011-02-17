@@ -9,5 +9,5 @@
 ...
 <D-0> : Jump to Tab/Buffer 10
 
-:CopyMatches : Copies last search results to clipboard etc.
+:CopyMatches : Copies last search results to clipboard 
 
