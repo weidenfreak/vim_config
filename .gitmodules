@@ -88,3 +88,6 @@
 [submodule "home/.vim/bundle/gsearch"]
 	path = home/.vim/bundle/gsearch
 	url = https://github.com/vim-scripts/greplace.vim.git
+[submodule "home/.vim/bundle/tabbar"]
+	path = home/.vim/bundle/tabbar
+	url = https://github.com/thenoseman/TabBar.git
