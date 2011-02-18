@@ -87,7 +87,7 @@
 	url = https://github.com/sukima/xmledit.git
 [submodule "home/.vim/bundle/tabbar"]
 	path = home/.vim/bundle/tabbar
-	url = https://github.com/vim-scripts/TabBar.git
+	url = https://github.com/thenoseman/TabBar.git
 [submodule "home/.vim/bundle/gsearch"]
 	path = home/.vim/bundle/gsearch
 	url = https://github.com/vim-scripts/greplace.vim.git

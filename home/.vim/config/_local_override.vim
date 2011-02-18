@@ -82,9 +82,9 @@ set list!
 "
 " Use same TAB Setting as everywhere else in Rails
 "
-autocmd User Rails        setlocal shiftwidth=2
-autocmd User Rails        setlocal tabstop=2
-autocmd User Rails        setlocal softtabstop=2
+autocmd User Rails setlocal shiftwidth=2
+autocmd User Rails setlocal tabstop=2
+autocmd User Rails setlocal softtabstop=2
 
 "
 " Keep Block visually marked when indenting
@@ -95,26 +95,27 @@ vmap > ><CR>gv
 vmap < <<CR>gv
 
 " Copied modified from https://gist.github.com/578787
-" Alt+Up, Alt+k moves line up
-nmap <M-Up> :m .-2<CR>
-nmap <M-k> :m .-2<CR>
-imap <M-Up> :m .-2<CR> 
-imap <M-k> :m .-2<CR>
-vmap <M-Up> :m .-2<CR> 
-vmap <M-k> :m .-2<CR>
+" Cmd+Up, Cmd+k moves line up
+nmap <D-Up> :m .-2<CR>
+nmap <D-k> :m .-2<CR>
+imap <D-Up> :m .-2<CR> 
+imap <D-k> :m .-2<CR>
+vmap <D-Up> :m .-2<CR> 
+vmap <D-k> :m .-2<CR>
 
-" Alt+Down, Alt+j moves line down
-nmap <M-Down> :m .+<CR> 
-nmap <M-j> :m .+<CR>
-imap <M-Down> :m .+<CR> 
-imap <M-j> :m .+<CR>
-vmap <M-Down> :m .+<CR> 
-vmap <M-j> :m .+<CR>
+" Cmd+Down, Cmd+j moves line down
+nmap <D-Down> :m .+<CR> 
+nmap <D-j> :m .+<CR>
+imap <D-Down> :m .+<CR> 
+imap <D-j> :m .+<CR>
+vmap <D-Down> :m .+<CR> 
+vmap <D-j> :m .+<CR>
 
 "
 " Since I constantly type :W instead of :w remap that
 "
 command! W w
+command! Qa qa
 
 " Show cursor line
 set cul
