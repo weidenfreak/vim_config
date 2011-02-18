@@ -8,8 +8,8 @@ source ~/.vim/bundle/php-vip/.vim/php-doc.vim
 "
 " Map PHPDoc Functions
 "
-inoremap <C-P> :call PhpDocSingle()<CR>i
-nnoremap <C-P> :call PhpDocSingle()<CR>
+" inoremap <C-P> :call PhpDocSingle()<CR>i
+" nnoremap <C-P> :call PhpDocSingle()<CR>
 
 "
 " reset defaults

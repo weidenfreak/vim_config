@@ -17,6 +17,7 @@
 + Added railscasts theme
 + Added keyconfig overrides (see config/_local_override.vim)
 + Add CopyMatches Script from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard)
++ Add [AnsiEsc](https://github.com/vim-scripts/AnsiEsc.vim) (removes ESC sequences fromm documentation called with <K>)
 
 ## INTRODUCTION ##
 

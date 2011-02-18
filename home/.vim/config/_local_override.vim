@@ -126,5 +126,7 @@ set relativenumber
 " Wrap
 set wrap
 
-" No macmeta ever!
-set nomacmeta
+if has("gui_running")
+  " No macmeta ever!
+  set nomacmeta
+endif
