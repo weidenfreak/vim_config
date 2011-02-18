@@ -91,6 +91,3 @@
 [submodule "home/.vim/bundle/tabbar"]
 	path = home/.vim/bundle/tabbar
 	url = https://github.com/thenoseman/TabBar.git
-[submodule "home/.vim/bundle/AnsiEsc"]
-	path = home/.vim/bundle/AnsiEsc
-	url = https://github.com/vim-scripts/AnsiEsc.vim.git
