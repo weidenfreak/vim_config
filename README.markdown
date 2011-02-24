@@ -18,6 +18,7 @@
 + Added keyconfig overrides (see config/_local_override.vim)
 + Add CopyMatches Script from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard)
 + Add Inconsolata-ds font in extras
++ Add [vim-javascript](https://github.com/pangloss/vim-javascript) for better javascript indention
 
 # Original README follows #
 
