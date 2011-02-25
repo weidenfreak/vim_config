@@ -19,6 +19,7 @@
 + Add CopyMatches Script from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard)
 + Add Inconsolata-ds font in extras
 + Add [vim-javascript](https://github.com/pangloss/vim-javascript) for better javascript indention
++ Replaced [vim-autoclose](https://github.com/Townk/vim-autoclose) with [my own fork](https://github.com/thenoseman/vim-autoclose), which fixes doublequote errors in 'RemoveQuotes'
 
 # Original README follows #
 
