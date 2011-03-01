@@ -94,3 +94,6 @@
 [submodule "home/.vim/bundle/vim-autoclose"]
 	path = home/.vim/bundle/vim-autoclose
 	url = http://github.com/thenoseman/vim-autoclose.git
+[submodule "home/.vim/bundle/php-indenting-for-vim"]
+	path = home/.vim/bundle/php-indenting-for-vim
+	url = https://github.com/2072/PHP-Indenting-for-VIm.git
