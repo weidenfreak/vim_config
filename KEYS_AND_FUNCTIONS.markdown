@@ -7,7 +7,7 @@
 
 ,d : Show/Hide NERDTree
 
-,t : Fuzzyfinder
+,t : Show Fuzzyfinder
 
 <D-1> : Jump to Tab/Buffer 1
 
