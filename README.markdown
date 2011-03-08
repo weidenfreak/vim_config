@@ -17,6 +17,7 @@
 + Added railscasts theme
 + Added keyconfig overrides (see config/_local_override.vim)
 + Add CopyMatches Script from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard)
++ Add [vim-haml](https://github.com/tpope/vim-haml) HAML/SASS Plugin
 + Add [Inconsolata-dz](http://nodnod.net/2009/feb/12/adding-straight-single-and-double-quotes-inconsola/) font in extras
 + Add [vim-javascript](https://github.com/pangloss/vim-javascript) for better javascript indention
 + Replaced [vim-autoclose](https://github.com/Townk/vim-autoclose) with [my own fork](https://github.com/thenoseman/vim-autoclose), which fixes doublequote errors in 'RemoveQuotes'
