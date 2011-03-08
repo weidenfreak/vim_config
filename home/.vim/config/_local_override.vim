@@ -130,3 +130,14 @@ if has("gui_running")
   " No macmeta ever!
   set nomacmeta
 endif
+
+" 
+" where to find ctags
+" see :help file-searching 
+" and :help tags
+"
+" Searches for files named "vim-tags" in directories to a max level of two
+" deep
+" generation for PHP e.g.:
+" ctags -f vim.tags -h ".php" -R --exclude="\.svn" --totals=yes --tag-relative=yes --PHP-kinds=+cf --regex-PHP='/abstract class ([^ ]*)/\1/c/' --regex-PHP='/interface ([^ ]*)/\1/c/' --regex-PHP='/(public |static |abstract |protected |private )+function ([^ (]*)/\2/f/'
+set tags+=./tags,tags,./**2/vim.tags
