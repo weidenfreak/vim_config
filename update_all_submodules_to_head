@@ -11,12 +11,8 @@
 # First update all submodules to HEAD
 git submodule foreach git pull origin master
 
-# Then add changes to superproject
-git add home/.vim/bundle/*
-git add home/.vim/external/*
-
 # Commit
-git commit -m "Updated submodules to the newest version"
+git commit -a -m "Updated submodules to the newest version as of `date`"
 
 # Push upstream
 git push
