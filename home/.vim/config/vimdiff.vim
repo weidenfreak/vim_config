@@ -1,21 +1,9 @@
-function GlobalVimDiffMode()
+"
+" Setting for VIM in diff-mode (mvim -d)
+"
 
-  " If Tabbar is not loaded make it think it is
-  let Tb_loaded= 1
-  
-  " If Tabbar is already loaded, stop it
-  if exists(*GlobalTbStop)
-    call GlobalTbStop()
-  endif
-  
-  " Make Splits the same size
+if &diff
+  " Turning off TabBar is done in tabbar.vim	
   set equalalways
-  
-  " Ignore Whitespace in diff
-  set diffopt=filler,iwhite
-
-endfunction
-
-
-" When startet as 'mvim -d'
-au FilterWritePre * if &diff | call GlobalVimDiffMode() | endif
+  set diffopt=filler,iwhite,vertical
+end
