@@ -16,3 +16,8 @@ let g:syntastic_quiet_warnings=0
 
 " No Check for HTML
 let g:syntastic_disabled_filetypes = ['html']
+
+" In vimdiff Mode do not auto-show the errors
+if &diff
+  let g:syntastic_auto_loc_list=2
+endif
