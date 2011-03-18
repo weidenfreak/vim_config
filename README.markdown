@@ -23,6 +23,9 @@
 + Replaced [vim-autoclose](https://github.com/Townk/vim-autoclose) with [my own fork](https://github.com/thenoseman/vim-autoclose), which fixes doublequote errors in 'RemoveQuotes'
 + Add current [PHP-Indention](https://github.com/2072/PHP-Indenting-for-VIm) which is going into the next VIM version.
 + Add [dirdiff](http://www.vim.org/scripts/script.php?script_id=102&rating=life_changing)
++ Added my own "mvim" script (extras/mvim) that makes all passed cmdargs available to vim ($VIM_CMDARGS)
+  This is used to enable you to call "mvim -d" with two directories (normally only two files).
+  If you call "mvim -d" with two directories, the DirDiff Plugin will automatically be called to diff the directories. Nice.
 
 # Original README follows #
 
