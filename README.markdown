@@ -22,6 +22,7 @@
 + Add [vim-javascript](https://github.com/pangloss/vim-javascript) for better javascript indention
 + Replaced [vim-autoclose](https://github.com/Townk/vim-autoclose) with [my own fork](https://github.com/thenoseman/vim-autoclose), which fixes doublequote errors in 'RemoveQuotes'
 + Add current [PHP-Indention](https://github.com/2072/PHP-Indenting-for-VIm) which is going into the next VIM version.
++ Add [dirdiff](http://www.vim.org/scripts/script.php?script_id=102&rating=life_changing)
 
 # Original README follows #
 
