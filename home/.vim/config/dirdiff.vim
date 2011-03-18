@@ -7,7 +7,7 @@ let g:DirDiffWindowSize = 14
 "
 " Auto Start DirDiff Plugin when started via "mvim -d DIRECTORY1 DIRECTORY2"
 "
-function! s:AutoStartDirDiff()
+function! AutoStartDirDiff()
   " Fetch ENV-Variable which is set in "mvim" script
   let s:cmdargs = split($VIM_CMDARGS, '[ "]')
 
@@ -32,12 +32,8 @@ function! s:AutoStartDirDiff()
     " Start DirDiff!
     exe ":DirDiff " . fnameescape(s:secondToLastFile) . " " . fnameescape(s:lastFile)
     
-    " VIM will open the two directories which is not wanted here, so close
-    " them
-    "call BufSel("^" . s:secondToLastFile . "$")
+    " VIM will open the two directories as files. Close them.
     exe ":bd1"
-
-    "call BufSel("^" . s:lastFile . "$")
     exe ":bd2"
    
     " resize all windows
@@ -46,10 +42,8 @@ function! s:AutoStartDirDiff()
     " resize dirdiff window to size defined in condif
     exe ":resize " . g:DirDiffWindowSize
 
-    echo g:DirDiffWindowSize
-
   endif
 endfunction
 
-autocmd VimEnter * call s:AutoStartDirDiff()
+autocmd VimEnter * call AutoStartDirDiff()
 
