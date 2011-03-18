@@ -100,3 +100,6 @@
 [submodule "home/.vim/bundle/php-indenting-for-vim"]
 	path = home/.vim/bundle/php-indenting-for-vim
 	url = https://github.com/2072/PHP-Indenting-for-VIm.git
+[submodule "home/.vim/bundle/dirdiff"]
+	path = home/.vim/bundle/dirdiff
+	url = https://github.com/vim-scripts/DirDiff.vim.git
