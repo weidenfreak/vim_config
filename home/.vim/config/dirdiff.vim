@@ -5,7 +5,7 @@ let g:DirDiffExcludes = "CVS,*.class,*.exe,.*.swp,.svn"
 let g:DirDiffWindowSize = 14 
 
 "
-" Auto Start DirDiff Plugin when started via "mvim -d DIRECTORY1 DIRECTORY2"
+" Function to start DirDiff Plugin when started via "mvim -d DIRECTORY1 DIRECTORY2"
 "
 function! AutoStartDirDiff()
   " Fetch ENV-Variable which is set in "mvim" script
@@ -33,8 +33,8 @@ function! AutoStartDirDiff()
     exe ":DirDiff " . fnameescape(s:secondToLastFile) . " " . fnameescape(s:lastFile)
     
     " VIM will open the two directories as files. Close them.
-    exe ":bd1"
-    exe ":bd2"
+    silent! exe ":bd1"
+    silent! exe ":bd2"
    
     " resize all windows
     exe ":wincmd ="
@@ -44,6 +44,3 @@ function! AutoStartDirDiff()
 
   endif
 endfunction
-
-autocmd VimEnter * call AutoStartDirDiff()
-

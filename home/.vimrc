@@ -47,3 +47,6 @@ runtime! external/*.vim
 
 " My local overrides come last
 runtime! config/_local_override.vim
+
+" Auto activate DirDiff
+autocmd VimEnter * call AutoStartDirDiff()
