@@ -26,6 +26,11 @@
 + Added my own "mvim" script (extras/mvim) that makes all passed cmdargs available to vim ($VIM_CMDARGS)
   This is used to enable you to call "mvim -d" with two directories (normally only two files).
   If you call "mvim -d" with two directories, the DirDiff Plugin will automatically be called to diff the directories. Nice.
++ Add [Decho](https://github.com/vim-scripts/Decho) for script debugging
+
+## TODOS ##
++ Need to fix windows sizes when using "mvim -d DIR1 DIR2". Until then ":call AutoStartDirDiff()" manually.
+
 
 # Original README follows #
 
