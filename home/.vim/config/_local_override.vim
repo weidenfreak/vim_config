@@ -95,21 +95,21 @@ vmap > ><CR>gv
 vmap < <<CR>gv
 
 " Copied modified from https://gist.github.com/578787
-" Cmd+Up, Cmd+k moves line up
-nmap <D-Up> :m .-2<CR>
-nmap <D-k> :m .-2<CR>
-imap <D-Up> :m .-2<CR> 
-imap <D-k> :m .-2<CR>
-vmap <D-Up> :m .-2<CR> 
-vmap <D-k> :m .-2<CR>
+" Ctrl+Up, Ctrl+k moves line up
+nmap <C-Up> :m .-2<CR>
+nmap <C-k> :m .-2<CR>
+imap <C-Up> :m .-2<CR> 
+imap <C-k> :m .-2<CR>
+vmap <C-Up> :m .-2<CR> 
+vmap <C-k> :m .-2<CR>
 
-" Cmd+Down, Cmd+j moves line down
-nmap <D-Down> :m .+<CR> 
-nmap <D-j> :m .+<CR>
-imap <D-Down> :m .+<CR> 
-imap <D-j> :m .+<CR>
-vmap <D-Down> :m .+<CR> 
-vmap <D-j> :m .+<CR>
+" Ctrl+Down, Ctrl+j moves line down
+nmap <C-Down> :m .+<CR> 
+nmap <C-j> :m .+<CR>
+imap <C-Down> :m .+<CR> 
+imap <C-j> :m .+<CR>
+vmap <C-Down> :m .+<CR> 
+vmap <C-j> :m .+<CR>
 
 "
 " Since I constantly type :W instead of :w remap that
@@ -121,7 +121,7 @@ command! Qa qa
 set cul
 
 " Relative Numberse
-set relativenumber
+" at the moment: dont really like it set relativenumber
 
 " Wrap
 set wrap
