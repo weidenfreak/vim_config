@@ -10,9 +10,6 @@ set hidden
 " save the last 100 commands/search terms
 set history=100
 
-" use ; for <Leader>
-let mapleader = ";"    
-
 "" shortmess settings:
 " f - use "(3 of 5)" instead of "(file 3 of 5)"
 " i - use "[noeol]" instead of "[Incomplete last line]"
@@ -45,8 +42,3 @@ runtime! config/**/*
 " External Vim Tips scripts
 runtime! external/*.vim
 
-" My local overrides come last
-runtime! config/_local_override.vim
-
-" Auto activate DirDiff
-autocmd VimEnter * call AutoStartDirDiff()

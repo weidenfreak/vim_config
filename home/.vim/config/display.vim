@@ -2,8 +2,20 @@
 "" loads display-related option (colorscheme, etc.)
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
-" use the desert256 colorscheme (works better with console than zenburn)
-colorscheme desert256
+colorscheme railscasts
+
+" No see-through in GUI
+if has("gui_running")
+  set transp=0
+endif
+
+" Show cursor line
+set cul
+
+"
+" New Font
+"
+set guifont=Inconsolata-dz:h12.00
 
 set laststatus=2   " always display a status line
 set number         " show line numbers

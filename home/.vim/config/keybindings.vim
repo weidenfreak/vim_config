@@ -6,10 +6,15 @@
 
 " fix arrow keys in console mode
 if has('gui_running')
-   " no need to mess with term
+  set nomacmeta
 else
    set term=ansi
 endif
+
+"
+" Leader = Comma
+"
+let mapleader = ","
 
 " ;w saves a buffer
 map <Leader>w :w!<CR>
@@ -44,3 +49,39 @@ noremap ' `
 noremap ` '
 
 nnoremap ;; :
+
+"
+" Keep Block visually marked when indenting
+"
+nmap > ><CR>gv
+nmap < <<CR>gv
+vmap > ><CR>gv
+vmap < <<CR>gv
+
+" Copied modified from https://gist.github.com/578787
+" Ctrl+Up, Ctrl+k moves line up
+nmap <C-Up> :m .-2<CR>
+nmap <C-k> :m .-2<CR>
+imap <C-Up> :m .-2<CR> 
+imap <C-k> :m .-2<CR>
+vmap <C-Up> :m .-2<CR> 
+vmap <C-k> :m .-2<CR>
+
+" Ctrl+Down, Ctrl+j moves line down
+nmap <C-Down> :m .+<CR> 
+nmap <C-j> :m .+<CR>
+imap <C-Down> :m .+<CR> 
+imap <C-j> :m .+<CR>
+vmap <C-Down> :m .+<CR> 
+vmap <C-j> :m .+<CR>
+
+"
+" Show Invisibles (http://vimcasts.org/episodes/show-invisibles/) 
+"
+" Shortcut to rapidly toggle `set list`
+" Use the same symbols as TextMate for tabstops and EOLs
+nmap <leader>l :set list!<CR>
+set listchars=tab:▸\ ,eol:¬
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
+set list! 
