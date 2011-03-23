@@ -26,17 +26,11 @@ set tabstop=2
 set shiftwidth=2
 
 "
-" Height and Width
-"
-set columns=9999
-set lines=999
-
-"
-" No Wrapping whatsoever
+" Dont break lines
 "
 set textwidth=0
 set nolinebreak
-set nowrap
+set wrap
 
 "
 " New Font
@@ -44,7 +38,7 @@ set nowrap
 set guifont=Inconsolata-dz:h12.00
 
 "
-" No Auto-Wrap!
+" Formatting options
 "
 set formatoptions=crqn21
 
@@ -120,11 +114,8 @@ command! Qa qa
 " Show cursor line
 set cul
 
-" Relative Numberse
-set relativenumber
-
-" Wrap
-set wrap
+" Relative Numbers
+set norelativenumber
 
 if has("gui_running")
   " No macmeta ever!
