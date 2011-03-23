@@ -8,28 +8,29 @@
 - Removed Outliner
 - Removed Command-T
 - Removed bufexplorer
-+ Add [FuzzyFinder](https://github.com/vim-scripts/FuzzyFinder)
-+ Add [PHP-VIP](https://github.com/tobyS/vip)
-+ Add [matchit](https://github.com/javanthropus/vim-matchit)
-+ Add [xmledit](https://github.com/sukima/xmledit/)
-+ Add [tabbar](https://github.com/thenoseman/TabBar) (Modified Hotkey)
-+ Add [greplace](https://github.com/vim-scripts/greplace)
-+ Added railscasts theme
++ Added [FuzzyFinder](https://github.com/vim-scripts/FuzzyFinder)
++ Added [PHP-VIP](https://github.com/tobyS/vip)
++ Added [matchit](https://github.com/javanthropus/vim-matchit)
++ Added [xmledit](https://github.com/sukima/xmledit/)
++ Added [tabbar](https://github.com/thenoseman/TabBar) (Modified Hotkey)
++ Added [greplace](https://github.com/vim-scripts/greplace)
 + Added keyconfig overrides (see config/_local_override.vim)
-+ Add CopyMatches Script from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard)
-+ Add [vim-haml](https://github.com/tpope/vim-haml) HAML/SASS Plugin
-+ Add [Inconsolata-dz](http://nodnod.net/2009/feb/12/adding-straight-single-and-double-quotes-inconsola/) font in extras
-+ Add [vim-javascript](https://github.com/pangloss/vim-javascript) for better javascript indention
++ Added CopyMatches Script from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard)
++ Added [vim-haml](https://github.com/tpope/vim-haml) HAML/SASS Plugin
++ Added [Inconsolata-dz](http://nodnod.net/2009/feb/12/adding-straight-single-and-double-quotes-inconsola/) font in extras
++ Added [vim-javascript](https://github.com/pangloss/vim-javascript) for better javascript indention
 + Replaced [vim-autoclose](https://github.com/Townk/vim-autoclose) with [my own fork](https://github.com/thenoseman/vim-autoclose), which fixes doublequote errors in 'RemoveQuotes'
-+ Add current [PHP-Indention](https://github.com/2072/PHP-Indenting-for-VIm) which is going into the next VIM version.
-+ Add [dirdiff](http://www.vim.org/scripts/script.php?script_id=102&rating=life_changing)
++ Added current [PHP-Indention](https://github.com/2072/PHP-Indenting-for-VIm) which is going into the next VIM version anyway.
++ Added [dirdiff](http://www.vim.org/scripts/script.php?script_id=102&rating=life_changing)
 + Added my own "mvim" script (extras/mvim) that makes all passed cmdargs available to vim ($VIM_CMDARGS)
   This is used to enable you to call "mvim -d" with two directories (normally only two files).
-  If you call "mvim -d" with two directories, the DirDiff Plugin will automatically be called to diff the directories. Nice.
-+ Add [Decho](https://github.com/vim-scripts/Decho) for script debugging
+  If you call "mvim -d" with two directories, the DirDiff Plugin will automatically be called to diff the directories.
++ Added [Decho](https://github.com/vim-scripts/Decho) for script debugging
++ Added the [railscasts theme](https://github.com/jpo/vim-railscasts-theme) as submodule
 
 ## TODOS ##
-+ Need to fix windows sizes when using "mvim -d DIR1 DIR2". Until then ":call AutoStartDirDiff()" manually.
++ Try out [AsNeeded-2](https://github.com/vim-scripts/Asneeded-2)
++ Try out [vim-indent-object](https://github.com/michaeljsmith/vim-indent-object)
 
 
 # Original README follows #

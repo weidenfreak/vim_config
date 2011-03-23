@@ -106,3 +106,6 @@
 [submodule "home/.vim/bundle/decho"]
 	path = home/.vim/bundle/decho
 	url = https://github.com/vim-scripts/Decho.git
+[submodule "home/.vim/bundle/railscasts-theme"]
+	path = home/.vim/bundle/railscasts-theme
+	url = https://github.com/jpo/vim-railscasts-theme
