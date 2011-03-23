@@ -4,11 +4,6 @@
 
 colorscheme railscasts
 
-" No see-through in GUI
-if has("gui_running")
-  set transp=0
-endif
-
 " Show cursor line
 set cul
 

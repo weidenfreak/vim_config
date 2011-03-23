@@ -1,10 +1,6 @@
-""""""""""""""""""""""""""""""""""""""""
-"" GUI-specific settings
-""""""""""""""""""""""""""""""""""""""""
-
 " only execute the contents of this file if the GUI is in use.
 if has("gui_running")
-   set transp=8
+   set transp=0
   
    "" gui options
    " a - Autoselect
@@ -12,7 +8,4 @@ if has("gui_running")
    " 
    " more interesting, what is absent: no menu, no toolbar, no scrollbars.
    set guioptions=ac
-
-   set lines=60
-   set columns=180
 endif
