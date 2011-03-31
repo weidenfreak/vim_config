@@ -12,4 +12,5 @@
 git submodule foreach git pull origin master
 
 # Commit
-git commit -a -m "Updated submodules to the newest version as of `date`"
+git add home/.vim/bundle/* home/.vim/external/*
+git commit -m "Updated submodules to the newest version as of `date`" 
