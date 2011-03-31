@@ -109,3 +109,6 @@
 [submodule "home/.vim/bundle/railscasts-theme"]
 	path = home/.vim/bundle/railscasts-theme
 	url = https://github.com/jpo/vim-railscasts-theme
+[submodule "home/.vim/bundle/vim-markdown-syntax"]
+	path = home/.vim/bundle/vim-markdown-syntax
+	url = https://github.com/plasticboy/vim-markdown
