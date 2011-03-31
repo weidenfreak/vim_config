@@ -86,4 +86,4 @@ highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
 " Redefine here AGAIN
-nmap! <Leader>t :FufCoverageFile<CR>
+nmap <Leader>t :FufCoverageFile<CR>

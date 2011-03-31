@@ -12,9 +12,6 @@ This repository is meant to be used with the wonderful [Homesick-Gem](https://gi
 
 Fork away!
 
-
-## Modifications in this fork ##
-
 ### Removed Plugins: ###
 Gist, Dbext, TailMinusF, CamelCaseMotion, Outliner, Command-T, bufexplorer
 
@@ -26,7 +23,6 @@ Gist, Dbext, TailMinusF, CamelCaseMotion, Outliner, Command-T, bufexplorer
 + [tabbar](https://github.com/thenoseman/TabBar) (Modified Hotkey)
 + [greplace](https://github.com/vim-scripts/greplace) (:Gsearch)
 + [vim-haml](https://github.com/tpope/vim-haml) HAML/SASS Plugin
-+ [Inconsolata-dz](http://nodnod.net/2009/feb/12/adding-straight-single-and-double-quotes-inconsola/) font in extras
 + [vim-javascript](https://github.com/pangloss/vim-javascript) for better javascript indention
 + [dirdiff](https://github.com/vim-scripts/DirDiff.vim)
 + [my own fork of autoclose](https://github.com/thenoseman/vim-autoclose), which fixes doublequote errors in 'RemoveQuotes'
@@ -56,7 +52,9 @@ Gist, Dbext, TailMinusF, CamelCaseMotion, Outliner, Command-T, bufexplorer
 + my own "mvim" script (extras/mvim) that makes all passed cmdargs available to vim ($VIM_CMDARGS)
   This is used to enable you to call "mvim -d" with two directories (normally only two files).
   If you call "mvim -d" with two directories, the DirDiff Plugin will automatically be called to diff the directories.
-+ the [railscasts theme](https://github.com/jpo/vim-railscasts-theme) as submodule
++ The [railscasts theme](https://github.com/jpo/vim-railscasts-theme) as default theme in a submodule
++ My favorite font [Inconsolata-dz](http://nodnod.net/2009/feb/12/adding-straight-single-and-double-quotes-inconsola/) in extras
++ `update_all_submodules_to_head` script that updates all submodules and creates a commit for those updates
 
 ## Todos ##
 + Try out [AsNeeded-2](https://github.com/vim-scripts/Asneeded-2)
