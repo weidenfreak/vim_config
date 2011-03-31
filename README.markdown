@@ -1,120 +1,69 @@
-# VIM\_CONFIG #
+My personal VIM-config
+======================
+
+This is my personal configuration for everybodies favorite editor [VIM](http://code.google.com/p/macvim/).
+I use it mainly for ruby development with a touch of PHP.
+My configuration is based on [duwanis](https://github.com/duwanis/vim_config) wonderful work.
+
+This repository is meant to be used with the wonderful [Homesick-Gem](https://github.com/technicalpickles/homesick):
+
+    homesick clone thenoseman/vim_config
+    homesick symlink vim_config
+
+Fork away!
+
 
 ## Modifications in this fork ##
-- Removed Gist
-- Removed Dbext
-- Removed TailMinusF
-- Removed CamelCaseMotion
-- Removed Outliner
-- Removed Command-T
-- Removed bufexplorer
-+ Added [FuzzyFinder](https://github.com/vim-scripts/FuzzyFinder)
-+ Added [PHP-VIP](https://github.com/tobyS/vip)
-+ Added [matchit](https://github.com/javanthropus/vim-matchit)
-+ Added [xmledit](https://github.com/sukima/xmledit/)
-+ Added [tabbar](https://github.com/thenoseman/TabBar) (Modified Hotkey)
-+ Added [greplace](https://github.com/vim-scripts/greplace)
-+ Added keyconfig overrides (see config/_local_override.vim)
-+ Added CopyMatches Script from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard)
-+ Added [vim-haml](https://github.com/tpope/vim-haml) HAML/SASS Plugin
-+ Added [Inconsolata-dz](http://nodnod.net/2009/feb/12/adding-straight-single-and-double-quotes-inconsola/) font in extras
-+ Added [vim-javascript](https://github.com/pangloss/vim-javascript) for better javascript indention
-+ Replaced [vim-autoclose](https://github.com/Townk/vim-autoclose) with [my own fork](https://github.com/thenoseman/vim-autoclose), which fixes doublequote errors in 'RemoveQuotes'
-+ Added current [PHP-Indention](https://github.com/2072/PHP-Indenting-for-VIm) which is going into the next VIM version anyway.
-+ Added [dirdiff](http://www.vim.org/scripts/script.php?script_id=102&rating=life_changing)
-+ Added my own "mvim" script (extras/mvim) that makes all passed cmdargs available to vim ($VIM_CMDARGS)
+
+### Removed Plugins: ###
+Gist, Dbext, TailMinusF, CamelCaseMotion, Outliner, Command-T, bufexplorer
+
+## Current Plugins: ###
++ [FuzzyFinder](https://github.com/vim-scripts/FuzzyFinder) (,t)
++ [PHP-VIP](https://github.com/tobyS/vip)
++ [matchit](https://github.com/javanthropus/vim-matchit)
++ [xmledit](https://github.com/sukima/xmledit/)
++ [tabbar](https://github.com/thenoseman/TabBar) (Modified Hotkey)
++ [greplace](https://github.com/vim-scripts/greplace) (:Gsearch)
++ [vim-haml](https://github.com/tpope/vim-haml) HAML/SASS Plugin
++ [Inconsolata-dz](http://nodnod.net/2009/feb/12/adding-straight-single-and-double-quotes-inconsola/) font in extras
++ [vim-javascript](https://github.com/pangloss/vim-javascript) for better javascript indention
++ [dirdiff](https://github.com/vim-scripts/DirDiff.vim)
++ [my own fork of autoclose](https://github.com/thenoseman/vim-autoclose), which fixes doublequote errors in 'RemoveQuotes'
++ [PHP-Indention](https://github.com/2072/PHP-Indenting-for-VIm) which is going into the next VIM version anyway.
++ [Decho](https://github.com/vim-scripts/Decho) for script debugging
++ [Markdown syntax](https://github.com/plasticboy/vim-markdown)
++ [Ack.vim](http://github.com/mileszs/ack.vim "Ack.vim at github")
++ [AsNeeded](http://github.com/vim-scripts/AsNeeded "AsNeeded at github")
++ [BufOnly](http://github.com/duff/vim-bufonly "BufOnly at github")
++ [Conque](http://github.com/rson/vim-conque "Conque at github")
++ [Endwise](http://github.com/tpope/vim-endwise "vim-endwise at github")
++ [Fugitive](http://github.com/tpope/vim-fugitive "vim-fugitive at github")
++ [NERDCommenter](http://github.com/scrooloose/nerdcommenter "nerdcommenter at github")
++ [NERDTree](http://github.com/scrooloose/nerdtree "nerdtree at github")
++ [Rails.vim](http://github.com/tpope/vim-rails "vim-rails at github")
++ [Rake.vim](http://github.com/tpope/vim-rake "vim-rake at github")
++ [Repeat.vim](http://github.com/tpope/vim-repeat "repeat at github")
++ [Rvm.vim](http://github.com/csexton/rvm.vim "rvm.vim at github")
++ [Snipmate.vim](http://github.com/msanders/snipmate.vim "snipmate.vim at github")
++ [Space.vim](http://github.com/spiiph/vim-space "vim-space at github")
++ [Surround.vim](http://github.com/tpope/vim-surround "vim-surround at github")
++ [Syntastic](http://github.com/scrooloose/syntastic "syntastic at github")
++ [YankRing](http://github.com/chrismetcalf/vim-yankring "yankring at github")
+
+## Added non-plugin features ##
++ CopyMatches Script from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard) (:CopyMatches)
++ my own "mvim" script (extras/mvim) that makes all passed cmdargs available to vim ($VIM_CMDARGS)
   This is used to enable you to call "mvim -d" with two directories (normally only two files).
   If you call "mvim -d" with two directories, the DirDiff Plugin will automatically be called to diff the directories.
-+ Added [Decho](https://github.com/vim-scripts/Decho) for script debugging
-+ Added the [railscasts theme](https://github.com/jpo/vim-railscasts-theme) as submodule
++ the [railscasts theme](https://github.com/jpo/vim-railscasts-theme) as submodule
 
-## TODOS ##
+## Todos ##
 + Try out [AsNeeded-2](https://github.com/vim-scripts/Asneeded-2)
 + Try out [vim-indent-object](https://github.com/michaeljsmith/vim-indent-object)
-
-
-# Original README follows #
-
-## INTRODUCTION ##
-
-This is a vim configuration created by [duwanis](http://www.duwanis.com
-"Duwanis.com"). It includes a few niceties for Ruby/Rails development, as well
-as a few MacVim/Gui specific options -  but is mostly composed of general tools
-to improve the Vim editing experience. The one exception is that this
-configuration necessitates a \*nix system (Mac OS X, Linux, etc.) in order to
-work properly. But you're probably on \*nix anyway if you want to use Vim, so
-that's probably not a big deal.
-
-A couple of the plugins (namely, Command-T and Conque) require Vim to be
-compiled with Ruby and/or Python support in order to operate correctly. Be aware
-of that if you run into any problems.
-
-## NEWBIE-FRIENDLY ##
-
-This config is written to be newbie-friendly - basically, when I introduce
-someone to Vim, I want to be able to say "go through the vim tutorial, then copy
-my config, read the README, and you'll be good to go." So I've tried to be
-explicit here, but you shouldn't expect to pick this config up and run with it
-if you've never used Vim before - go through the vim tutorial (`:help vimtutor`)
-first, at least. :)
-      
-## INSTALLATION ##
-      
-Though you'll probably want to just examine this vim config to see what
-I've used, if you're TOTALLY new to vim, you might want to install it and
-try it out yourself. That's cool. Here's how:
-
-1. Fork this repository (so you have your own copy for when you want to
-   make changes).
-2. Install the homesick gem (this makes it really easy): `sudo gem
-   install homesick`
-3. Install your copy of the vim\_config repository using homesick:
-   `homesick clone your_github_username/vim_config` (assuming you
-   cloned it on github)
-4. Symlink it using homesick: `homesick symlink
-   your_github_username/vim_config`
-5. Done.
-6. ...unless you want to use command-T, which requires that you build some
-   stuff first.
-7. `cd ~/.vim/bundle/commandT/ruby/command-t && ruby extconf.rb && make`
-   takes care of that, though.
-## FEATURES ##
-
-Currently, this vim configuration ships with the following plugins:
-
-* [Ack.vim](http://github.com/mileszs/ack.vim "Ack.vim at github")
-* [AsNeeded](http://github.com/vim-scripts/AsNeeded "AsNeeded at github")
-* [AutoClose](http://github.com/Townk/vim-autoclose "Autoclose at github")
-* [BufExplorer](http://github.com/vim-scripts/bufexplorer.zip "BufExplorer at
-  github")
-* [BufOnly](http://github.com/duff/vim-bufonly "BufOnly at github")
-* [Command-T](http://github.com/wincent/Command-T "Command-T at github")
-* [Conque](http://github.com/rson/vim-conque "Conque at github")
-* [Endwise](http://github.com/tpope/vim-endwise "vim-endwise at github")
-* [Fugitive](http://github.com/tpope/vim-fugitive "vim-fugitive at github")
-* [NERDCommenter](http://github.com/scrooloose/nerdcommenter "nerdcommenter at
-  github")
-* [NERDTree](http://github.com/scrooloose/nerdtree "nerdtree at github")
-* [Rails.vim](http://github.com/tpope/vim-rails "vim-rails at github")
-* [Rake.vim](http://github.com/tpope/vim-rake "vim-rake at github")
-* [Repeat.vim](http://github.com/tpope/vim-repeat "repeat at github")
-* [Rvm.vim](http://github.com/csexton/rvm.vim "rvm.vim at github")
-* [Snipmate.vim](http://github.com/msanders/snipmate.vim "snipmate.vim at
-  github")
-* [Space.vim](http://github.com/spiiph/vim-space "vim-space at github")
-* [Surround.vim](http://github.com/tpope/vim-surround "vim-surround at github")
-* [Syntastic](http://github.com/scrooloose/syntastic "syntastic at github")
-* [VimOutliner](https://github.com/Raimondi/vimoutliner "vimoutliner at github")
-* [YankRing](http://github.com/chrismetcalf/vim-yankring "yankring at github")
-
-You can follow the links above to see the original source of each included
-plugin, but I've also described them later in this document.
-
-Each plugin is pulled in as a git submodule, so you can stay
-up-to-date on the latest developments.
++ Auto-switch to previous Tab when :bd-ing a buffer
 
 ## STRUCTURE ##
-
 This vim config makes use of Tim Pope's pathogen plugin, which allows all other
 plugins to be split into their own individual folders rather than jumbled
 together in vim's default locations. This means that if you want to copy this
@@ -133,23 +82,7 @@ needs to be removed.
   using vim, but you don't want to keep your username and password in a git
   repository somewhere :D).
 
-## GENERAL SETTINGS ##
-
-* in Vim, you can define a mapleader key, which you can then use for
-  keybindings. I personally prefer to use the semicolon (';') for the mapleader,
-  since it's right there on the home row. If you'd like to change it to
-  something else (it defaults to '\\', and I know several people who prefer the
-  comma (',')), you can find that setting in the vimrc file. For the rest of
-  this README I'll use `<Leader>` to indicate a keybinding that makes use of the
-  mapleader - e.g. `<Leader>t` means hit `<Leader>` (the semicolon, unless you've
-  changed it) and then the `t` key.
-* Vim's default navigation keys - `h`,`j`,`k`, and `l`, can be used to navigate
-  between windows if preceded by Ctrl-W. I do this often enough (and hate
-  hitting Ctrl enough) that I've created bindings to do this with the mapleader:
-  `<Leader>h`,`<Leader>j`,`<Leader>k`, and `<Leader>l`.
-* Control-k and Control-j are mapped to move lines up/down.
-* In a similar fashion, I've created bindings for `:w!` and `:q!` : `<Leader>w`
-  and `<Leader>q`.
+## General features ##
 * Every once in a while I open a file that I don't have write access to (a file
   that Root owns, for example), make some changes, and go to save only to find
   out that I don't have the appropriate permissions. Thanks to
