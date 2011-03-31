@@ -9,4 +9,4 @@ map <Leader>gp :Git push<CR>
 
 " git-svn specific keybinds
 map <Leader>gnr :Git svn rebase<CR>
-map <leader>gnd :Git svn dcommit<CR>
+map <Leader>gnd :Git svn dcommit<CR>

@@ -80,7 +80,10 @@ vmap <C-j> :m .+<CR>
 "
 " Shortcut to rapidly toggle `set list`
 " Use the same symbols as TextMate for tabstops and EOLs
-nmap <leader>l :set list!<CR>
+nmap <Leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
+
+" Redefine here AGAIN
+nmap! <Leader>t :FufCoverageFile<CR>
