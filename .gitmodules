@@ -112,3 +112,6 @@
 [submodule "home/.vim/bundle/vim-markdown-syntax"]
 	path = home/.vim/bundle/vim-markdown-syntax
 	url = https://github.com/plasticboy/vim-markdown
+[submodule "home/.vim/bundle/vim-css-color"]
+	path = home/.vim/bundle/vim-css-color
+	url = https://github.com/skammer/vim-css-color
