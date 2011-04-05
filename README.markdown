@@ -46,7 +46,6 @@ Gist, Dbext, TailMinusF, CamelCaseMotion, Outliner, Command-T, bufexplorer
 + [Surround.vim](http://github.com/tpope/vim-surround "vim-surround at github")
 + [Syntastic](http://github.com/scrooloose/syntastic "syntastic at github")
 + [YankRing](http://github.com/chrismetcalf/vim-yankring "yankring at github")
-+ [CSS Color](https://github.com/skammer/vim-css-color)
 
 ## Added non-plugin features ##
 + CopyMatches Script from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard) (:CopyMatches)
