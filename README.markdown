@@ -47,6 +47,7 @@ Gist, Dbext, TailMinusF, CamelCaseMotion, Outliner, Command-T, bufexplorer
 + [Syntastic](http://github.com/scrooloose/syntastic "syntastic at github")
 + [YankRing](http://github.com/chrismetcalf/vim-yankring "yankring at github")
 + [Sparkup](https://github.com/rstacruz/sparkup)
++ [Supertab](https://github.com/ervandew/supertab)
 
 ## Added non-plugin features ##
 + CopyMatches Script from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard) (:CopyMatches)
@@ -61,6 +62,7 @@ Gist, Dbext, TailMinusF, CamelCaseMotion, Outliner, Command-T, bufexplorer
 + Try out [AsNeeded-2](https://github.com/vim-scripts/Asneeded-2)
 + Try out [vim-indent-object](https://github.com/michaeljsmith/vim-indent-object)
 + Auto-switch to previous Tab when :bd-ing a buffer
++ Make supertab not kill normal <Tab>s in html filetype
 
 ## STRUCTURE ##
 This vim config makes use of Tim Pope's pathogen plugin, which allows all other
