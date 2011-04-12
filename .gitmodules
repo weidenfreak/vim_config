@@ -100,9 +100,6 @@
 [submodule "home/.vim/bundle/dirdiff"]
 	path = home/.vim/bundle/dirdiff
 	url = https://github.com/vim-scripts/DirDiff.vim.git
-[submodule "home/.vim/bundle/decho"]
-	path = home/.vim/bundle/decho
-	url = https://github.com/vim-scripts/Decho.git
 [submodule "home/.vim/bundle/railscasts-theme"]
 	path = home/.vim/bundle/railscasts-theme
 	url = https://github.com/jpo/vim-railscasts-theme
@@ -112,3 +109,6 @@
 [submodule "home/.vim/external/sparkup"]
 	path = home/.vim/external/sparkup
 	url = https://github.com/rstacruz/sparkup.git
+[submodule "home/.vim/bundle/indexed-search"]
+	path = home/.vim/bundle/indexed-search
+	url = https://github.com/vim-scripts/IndexedSearch
