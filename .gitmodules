@@ -14,8 +14,8 @@
 	path = home/.vim/bundle/space
 	url = http://github.com/spiiph/vim-space.git
 [submodule "home/.vim/bundle/snipmate"]
-	path = home/.vim/bundle/snipmate
-	url = http://github.com/msanders/snipmate.vim.git
+  path = home/.vim/bundle/snipmate
+  url = http://github.com/MarcWeber/snipmate.vim.git
 [submodule "home/.vim/bundle/rvm"]
 	path = home/.vim/bundle/rvm
 	url = http://github.com/csexton/rvm.vim.git
