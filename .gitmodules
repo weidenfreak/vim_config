@@ -112,3 +112,12 @@
 [submodule "home/.vim/bundle/indexed-search"]
 	path = home/.vim/bundle/indexed-search
 	url = https://github.com/vim-scripts/IndexedSearch
+[submodule "home/.vim/bundle/snipmate"]
+	path = home/.vim/bundle/snipmate
+	url = https://github.com/MarcWeber/snipmate.vim.git
+[submodule "home/.vim/bundle/tlib"]
+	path = home/.vim/bundle/tlib
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "home/.vim/bundle/vim-addon-mw-utils"]
+	path = home/.vim/bundle/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
