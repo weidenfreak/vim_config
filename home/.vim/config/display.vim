@@ -25,6 +25,7 @@ set statusline+=%f\                                           " filename
 set statusline+=[%{strlen(&ft)?&ft:'none'}]                   " filetype
 set statusline+=%h%1*%m%r%w%0*                                " flags
 set statusline+=%=                                            " right align
+set statusline+=[ENC:%{&fileencoding}]\                       " file encoding
 set statusline+=%{fugitive#statusline()}                      " git status
 set statusline+=%{exists('g:loaded_rvm')?rvm#statusline():''} " rvm status
 set statusline+=(%l,%c%V)\ %<%P                               " offset
