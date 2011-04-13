@@ -3,6 +3,6 @@
 "
 let g:SuperTabDefaultCompletionType = "context"
 
-" Make supertab behave as normal <Tab> in HTML Files
-au! BufEnter,BufNewFile *.html,<html;eruby> imap <buffer> <Tab> <Tab>
-
+" map supertab to ctrl-space
+let g:SuperTabMappingForward = '<c-space>'
+let g:SuperTabMappingBackward = '<s-c-space>'

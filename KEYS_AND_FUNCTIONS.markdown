@@ -11,13 +11,15 @@
 
 ,g : Show Taglist 
 
-<D-1> : Jump to Tab/Buffer 1
+<c-1> : Jump to Tab/Buffer 1
 
-<D-2> : Jump to Tab/Buffer 2
+<c-2> : Jump to Tab/Buffer 2
 
 ...
 
-<D-0> : Jump to Tab/Buffer 10
+<c-0> : Jump to Tab/Buffer 10
+
+<c-space>: Autocomplete using supertab
 
 # Functions #
 :CopyMatches : Copies last search results to clipboard 
