@@ -1,1 +1,0 @@
-php-doc/php-doc.vim
