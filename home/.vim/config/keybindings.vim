@@ -28,11 +28,6 @@ map <Leader>j <C-W>j
 map <Leader>k <C-W>k
 map <Leader>l <C-W>l
 
-" use C-j and C-k to 'bubble' lines (see
-" http://vimcasts.org/episodes/bubbling-text/)
-map <C-j> ddp
-map <C-k> ddkP
-
 " navigate around in buffers...
 map <Leader>n :bnext<CR>
 map <Leader>p :bprevious<CR>
@@ -86,4 +81,7 @@ highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
 " Redefine here AGAIN
-nmap <Leader>t :FufCoverageFile<CR>
+nmap <Leader>m :FufCoverageFile<CR>
+
+" ,x closes buffer and jumps to previous one
+nmap <Leader>x :bd<CR>:Tbbp<CR> 
