@@ -2,8 +2,6 @@
 " Fuzzy Finder
 "
 " Also in keybindings.vim (see :scriptnames)
-:xa
-
 nmap <Leader>m :FufCoverageFile<CR> 
 
 " More Excludes
