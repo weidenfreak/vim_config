@@ -10,9 +10,6 @@
 [submodule "home/.vim/bundle/surround"]
 	path = home/.vim/bundle/surround
 	url = http://github.com/tpope/vim-surround.git
-[submodule "home/.vim/bundle/space"]
-	path = home/.vim/bundle/space
-	url = http://github.com/spiiph/vim-space.git
 [submodule "home/.vim/bundle/rvm"]
 	path = home/.vim/bundle/rvm
 	url = http://github.com/csexton/rvm.vim.git
@@ -121,3 +118,9 @@
 [submodule "home/.vim/bundle/vim-addon-mw-utils"]
 	path = home/.vim/bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "home/.vim/bundle/vim-indent-guides"]
+	path = home/.vim/bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "home/.vim/bundle/vim-easymotion"]
+	path = home/.vim/bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
