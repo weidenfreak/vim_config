@@ -41,13 +41,14 @@ Gist, Dbext, TailMinusF, CamelCaseMotion, Outliner, Command-T, bufexplorer
 + [Repeat.vim](http://github.com/tpope/vim-repeat "repeat at github")
 + [Rvm.vim](http://github.com/csexton/rvm.vim "rvm.vim at github")
 + [Snipmate.vim](https://github.com/MarcWeber/snipmate.vim) original source isn't maintained anymore and this one lives
-+ [Space.vim](http://github.com/spiiph/vim-space "vim-space at github")
 + [Surround.vim](http://github.com/tpope/vim-surround "vim-surround at github")
 + [Syntastic](http://github.com/scrooloose/syntastic "syntastic at github")
 + [YankRing](http://github.com/chrismetcalf/vim-yankring "yankring at github")
 + [Sparkup](https://github.com/rstacruz/sparkup)
 + [Supertab](https://github.com/ervandew/supertab)
 + [IndexedSearch](https://github.com/vim-scripts/IndexedSearch)
++ [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
++ [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
 
 ## Added non-plugin features ##
 + CopyMatches Script from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard) (:CopyMatches)

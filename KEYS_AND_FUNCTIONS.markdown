@@ -19,6 +19,10 @@
 
 <D-0> : Jump to Tab/Buffer 10
 
+,f ,w ,motio : EasyMotion
+
+,ig : VIM Indention Guides
+
 # Functions #
 :CopyMatches : Copies last search results to clipboard 
 
