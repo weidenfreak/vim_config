@@ -13,10 +13,17 @@ This repository is meant to be used with the wonderful [Homesick-Gem](https://gi
 Fork away!
 
 ### Removed Plugins: ###
-Gist, Dbext, TailMinusF, CamelCaseMotion, Outliner, Command-T, bufexplorer
++ [Conque](http://github.com/rson/vim-conque "Conque at github")
++ [Gist](https://github.com/mattn/gist-vim)
++ [Dbext](https://github.com/zklinger/dbext)
++ [TailMinusF](https://github.com/vim-scripts/TailMinusF)
++ [CamelCaseMotion](https://github.com/vim-scripts/camelcasemotion)
++ [VimOutliner](https://github.com/vimoutliner/vimoutliner)
++ [Command-T](https://github.com/vim-scripts/Command-T)
++ [BufExplorer](http://www.vim.org/scripts/script.php?script_id=42)
 
 ## Current Plugins: ###
-+ [FuzzyFinder](https://github.com/vim-scripts/FuzzyFinder) (,t)
++ [FuzzyFinder](https://github.com/vim-scripts/FuzzyFinder) (,m)
 + [PHP-VIP](https://github.com/tobyS/vip)
 + [matchit](https://github.com/javanthropus/vim-matchit)
 + [xmledit](https://github.com/sukima/xmledit/)
@@ -31,7 +38,6 @@ Gist, Dbext, TailMinusF, CamelCaseMotion, Outliner, Command-T, bufexplorer
 + [Ack.vim](http://github.com/mileszs/ack.vim "Ack.vim at github")
 + [AsNeeded](http://github.com/vim-scripts/AsNeeded "AsNeeded at github")
 + [BufOnly](http://github.com/duff/vim-bufonly "BufOnly at github")
-+ [Conque](http://github.com/rson/vim-conque "Conque at github")
 + [Endwise](http://github.com/tpope/vim-endwise "vim-endwise at github")
 + [Fugitive](http://github.com/tpope/vim-fugitive "vim-fugitive at github")
 + [NERDCommenter](http://github.com/scrooloose/nerdcommenter "nerdcommenter at github")
@@ -58,11 +64,10 @@ Gist, Dbext, TailMinusF, CamelCaseMotion, Outliner, Command-T, bufexplorer
 + The [railscasts theme](https://github.com/jpo/vim-railscasts-theme) as default theme in a submodule
 + My favorite font [Inconsolata-dz](http://nodnod.net/2009/feb/12/adding-straight-single-and-double-quotes-inconsola/) in extras
 + `update_all_submodules_to_head` script that updates all submodules and creates a commit for those updates
++ `update_php_functionlist` script to update the PHP-OmniComplete Function list from the PHP SVN Repository 
 
 ## Todos ##
-+ Try out [AsNeeded-2](https://github.com/vim-scripts/Asneeded-2)
 + Try out [vim-indent-object](https://github.com/michaeljsmith/vim-indent-object)
-+ Auto-switch to previous Tab when :bd-ing a buffer
 
 ## STRUCTURE ##
 This vim config makes use of Tim Pope's pathogen plugin, which allows all other
