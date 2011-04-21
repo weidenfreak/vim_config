@@ -1,1 +1,1 @@
-echo "<pre>"; var_dump(${1}); echo "</pre>"; die();
+echo "<pre>"; var_dump(${1}); echo "\nStopped intentionally in ".__FILE__." (line #".__LINE__.")</pre>"; die(); //DEBUG
