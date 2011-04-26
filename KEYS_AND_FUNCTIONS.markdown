@@ -30,6 +30,8 @@
 
 :BufOnly : Close all but the current buffer
 
+:DiffOrig : Shows the changes made to the urrent (unsaved) buffer
+
 # Textobject #
 ar / ir : a ruby def ... end, class ... end module ... end block (ar = incl. scope, ir = excluding scope)
 
