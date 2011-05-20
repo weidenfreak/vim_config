@@ -55,6 +55,7 @@ Fork away!
 + [IndexedSearch](https://github.com/vim-scripts/IndexedSearch)
 + [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 + [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
++ [vim-ruby](https://github.com/vim-ruby/vim-ruby)
 
 ## Added non-plugin features ##
 + CopyMatches Script from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard) (:CopyMatches)
