@@ -7,6 +7,6 @@ map <Leader>gs :Gstatus<CR>
 map <Leader>gc :Gcommit<CR>
 map <Leader>gp :Git push<CR>
 
-" git-svn specific keybinds
-map <Leader>gnr :Git svn rebase<CR>
-map <Leader>gnd :Git svn dcommit<CR>
+" Auto close fugitive buffers when I leave them
+" from http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/
+autocmd BufReadPost fugitive://* set bufhidden=delete
