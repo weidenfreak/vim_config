@@ -57,6 +57,7 @@ Fork away!
 + [vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
 + [vim-ruby](https://github.com/vim-ruby/vim-ruby)
 + [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
++ [scss-syntax](https://github.com/cakebaker/scss-syntax.vim)
 
 ## Added non-plugin features ##
 + CopyMatches Script from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard) (:CopyMatches)
