@@ -85,3 +85,6 @@ nmap <Leader>m :FufCoverageFile<CR>
 
 " ,x closes buffer and jumps to previous one
 nmap <Leader>x :bd<CR>:Tbbp<CR> 
+
+" ,o closes all buffers but the current one
+nmap <Leader>o :BufOnly<CR> 
