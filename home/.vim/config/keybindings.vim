@@ -32,9 +32,6 @@ map <Leader>l <C-W>l
 map <Leader>n :bnext<CR>
 map <Leader>p :bprevious<CR>
 
-" close all buffers but this one
-map <Leader>bo :BufOnly<CR>
-
 " switch ' and `, because:
 " ' jumps to the start of the line where a mark is
 " ` jumps to the exact location of a mark
