@@ -69,6 +69,9 @@ Fork away!
 + `update_all_submodules_to_head` script that updates all submodules and creates a commit for those updates
 + `update_php_functionlist` script to update the PHP-OmniComplete Function list from the PHP SVN Repository 
 + DiffOrig Function (:DiffOrig) to show the changes made to the current *unsaved* buffer
++ Snippets from:
+  + [scrooloose](https://github.com/scrooloose/snipmate-snippets)
+  + [honza default snippets](https://github.com/honza/snipmate-snippets)
 
 ## Todos ##
 + Try out [vim-indent-object](https://github.com/michaeljsmith/vim-indent-object)
