@@ -133,3 +133,6 @@
 [submodule "home/.vim/external/scrooloose-snipmate-snippets"]
 	path = home/.vim/external/scrooloose-snipmate-snippets
 	url = https://github.com/scrooloose/snipmate-snippets.git
+[submodule "home/.vim/bundle/vim-extradite"]
+	path = home/.vim/bundle/vim-extradite
+	url = https://github.com/int3/vim-extradite.git
