@@ -1,4 +1,11 @@
 "
 " Extradite Plugin
 "
-com Gl Extradite
+
+fun! CallExtradite()
+  exec "NERDTreeClose"
+  exec "Extradite"
+endfun
+
+com! Gl call CallExtradite()
+
