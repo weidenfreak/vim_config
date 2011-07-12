@@ -49,12 +49,12 @@ Fork away!
 + [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
 + [scss-syntax](https://github.com/cakebaker/scss-syntax.vim)
 + [extradite](https://github.com/int3/vim-extradite) Extends fugitive with a very nice `git log`
++ [TailMinusF](https://github.com/matsuu/TailMinusF.git) for rails.vm `:Rlog`
 
 ### Removed Plugins: ###
 + [Conque](http://github.com/rson/vim-conque "Conque at github")
 + [Gist](https://github.com/mattn/gist-vim)
 + [Dbext](https://github.com/zklinger/dbext)
-+ [TailMinusF](https://github.com/vim-scripts/TailMinusF)
 + [CamelCaseMotion](https://github.com/vim-scripts/camelcasemotion)
 + [VimOutliner](https://github.com/vimoutliner/vimoutliner)
 + [Command-T](https://github.com/vim-scripts/Command-T)
@@ -85,7 +85,7 @@ config but don't like a few of the plugins, you can very easily identify what
 needs to be removed.
 
 * bundle - this is the special folder pathogen uses to store plugins.
-* external - any submodules that aren't kept in bundle will go here. As of right
+z external - any submodules that aren't kept in bundle will go here. As of right
   now, pathogen is the only thing here.
 * config - this is where all the custom config files are kept. If you look in
   the vimrc file, you'll see where everything in this folder is loaded
