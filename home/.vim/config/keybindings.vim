@@ -77,7 +77,7 @@ set listchars=tab:▸\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
-" Redefine here AGAIN
+" Define here AGAIN
 nmap <Leader>m :FufCoverageFile<CR>
 
 " ,x closes buffer and jumps to previous one
