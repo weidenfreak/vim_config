@@ -25,7 +25,7 @@ Fork away!
 + [my own fork of autoclose](https://github.com/thenoseman/vim-autoclose), which fixes doublequote errors in 'RemoveQuotes'
 + [PHP-Indention](https://github.com/2072/PHP-Indenting-for-VIm) which is going into the next VIM version anyway.
 + [Markdown syntax](https://github.com/plasticboy/vim-markdown)
-+ [Ack.vim](http://github.com/mileszs/ack.vim "Ack.vim at github")
++ [Ack.vim](http://github.com/kronn/ack.vim "Ack.vim at github")
 + [AsNeeded](http://github.com/vim-scripts/AsNeeded "AsNeeded at github")
 + [BufOnly](http://github.com/duff/vim-bufonly "BufOnly at github")
 + [Endwise](http://github.com/tpope/vim-endwise "vim-endwise at github")
