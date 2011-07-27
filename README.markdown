@@ -50,6 +50,7 @@ Fork away!
 + [scss-syntax](https://github.com/cakebaker/scss-syntax.vim)
 + [extradite](https://github.com/int3/vim-extradite) Extends fugitive with a very nice `git log`
 + [TailMinusF](https://github.com/matsuu/TailMinusF.git) for rails.vm `:Rlog`
++ [HTML-AutoCloseTag](https://github.com/vim-scripts/HTML-AutoCloseTag)
 
 ### Removed Plugins: ###
 + [Conque](http://github.com/rson/vim-conque "Conque at github")
