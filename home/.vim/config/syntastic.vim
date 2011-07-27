@@ -15,7 +15,7 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_quiet_warnings=0
 
 " No Check for HTML and Coffescritp Files
-let g:syntastic_disabled_filetypes = ['html', 'coffee']
+let g:syntastic_disabled_filetypes = ['html', 'coffee', 'sass', 'haml']
 
 " In vimdiff Mode do not auto-show the errors
 if &diff

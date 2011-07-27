@@ -12,16 +12,6 @@ This repository is meant to be used with the wonderful [Homesick-Gem](https://gi
 
 Fork away!
 
-### Removed Plugins: ###
-+ [Conque](http://github.com/rson/vim-conque "Conque at github")
-+ [Gist](https://github.com/mattn/gist-vim)
-+ [Dbext](https://github.com/zklinger/dbext)
-+ [TailMinusF](https://github.com/vim-scripts/TailMinusF)
-+ [CamelCaseMotion](https://github.com/vim-scripts/camelcasemotion)
-+ [VimOutliner](https://github.com/vimoutliner/vimoutliner)
-+ [Command-T](https://github.com/vim-scripts/Command-T)
-+ [BufExplorer](http://www.vim.org/scripts/script.php?script_id=42)
-
 ## Current Plugins: ###
 + [FuzzyFinder](https://github.com/vim-scripts/FuzzyFinder) (,m)
 + [PHP-VIP](https://github.com/tobyS/vip)
@@ -35,7 +25,7 @@ Fork away!
 + [my own fork of autoclose](https://github.com/thenoseman/vim-autoclose), which fixes doublequote errors in 'RemoveQuotes'
 + [PHP-Indention](https://github.com/2072/PHP-Indenting-for-VIm) which is going into the next VIM version anyway.
 + [Markdown syntax](https://github.com/plasticboy/vim-markdown)
-+ [Ack.vim](http://github.com/mileszs/ack.vim "Ack.vim at github")
++ [Ack.vim](http://github.com/kronn/ack.vim "Ack.vim at github")
 + [AsNeeded](http://github.com/vim-scripts/AsNeeded "AsNeeded at github")
 + [BufOnly](http://github.com/duff/vim-bufonly "BufOnly at github")
 + [Endwise](http://github.com/tpope/vim-endwise "vim-endwise at github")
@@ -58,6 +48,17 @@ Fork away!
 + [vim-ruby](https://github.com/vim-ruby/vim-ruby)
 + [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
 + [scss-syntax](https://github.com/cakebaker/scss-syntax.vim)
++ [extradite](https://github.com/int3/vim-extradite) Extends fugitive with a very nice `git log`
++ [TailMinusF](https://github.com/matsuu/TailMinusF.git) for rails.vm `:Rlog`
+
+### Removed Plugins: ###
++ [Conque](http://github.com/rson/vim-conque "Conque at github")
++ [Gist](https://github.com/mattn/gist-vim)
++ [Dbext](https://github.com/zklinger/dbext)
++ [CamelCaseMotion](https://github.com/vim-scripts/camelcasemotion)
++ [VimOutliner](https://github.com/vimoutliner/vimoutliner)
++ [Command-T](https://github.com/vim-scripts/Command-T)
++ [BufExplorer](http://www.vim.org/scripts/script.php?script_id=42)
 
 ## Added non-plugin features ##
 + CopyMatches Script from [vimtips](http://vim.wikia.com/wiki/Copy_the_search_results_into_clipboard) (:CopyMatches)
@@ -69,6 +70,9 @@ Fork away!
 + `update_all_submodules_to_head` script that updates all submodules and creates a commit for those updates
 + `update_php_functionlist` script to update the PHP-OmniComplete Function list from the PHP SVN Repository 
 + DiffOrig Function (:DiffOrig) to show the changes made to the current *unsaved* buffer
++ Snippets for snipmate from:
+  + [scrooloose](https://github.com/scrooloose/snipmate-snippets)
+  + [honza default snippets](https://github.com/honza/snipmate-snippets)
 
 ## Todos ##
 + Try out [vim-indent-object](https://github.com/michaeljsmith/vim-indent-object)
@@ -81,7 +85,7 @@ config but don't like a few of the plugins, you can very easily identify what
 needs to be removed.
 
 * bundle - this is the special folder pathogen uses to store plugins.
-* external - any submodules that aren't kept in bundle will go here. As of right
+z external - any submodules that aren't kept in bundle will go here. As of right
   now, pathogen is the only thing here.
 * config - this is where all the custom config files are kept. If you look in
   the vimrc file, you'll see where everything in this folder is loaded
