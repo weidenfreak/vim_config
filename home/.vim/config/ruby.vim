@@ -24,7 +24,7 @@ fun LoadRubyKeybindings()
 endfun
 
 " These files are also Ruby.
-au BufRead,BufNewFile {Capfile,Gemfile,Rakefile,Thorfile,Vagrantfile,config.ru} set ft=ruby
+au BufRead,BufNewFile {*_scene.rb,Capfile,Gemfile,Rakefile,Thorfile,Vagrantfile,config.ru} set ft=ruby
 
 " Remove trailing whitespace
 au BufWritePre *.rb :%s/\s\+$//e
