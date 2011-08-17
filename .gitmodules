@@ -60,7 +60,7 @@
 	url = https://github.com/ervandew/supertab.git
 [submodule "home/.vim/bundle/matchit"]
 	path = home/.vim/bundle/matchit
-	url = https://github.com/javanthropus/vim-matchit.git
+	url = https://github.com/thenoseman/vim-matchit.git
 [submodule "home/.vim/bundle/fuzzyfinder"]
 	path = home/.vim/bundle/fuzzyfinder
 	url = https://github.com/vim-scripts/FuzzyFinder.git
