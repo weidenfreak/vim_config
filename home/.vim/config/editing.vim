@@ -55,3 +55,6 @@ set wrap
 " Relative Numbers
 set norelativenumber
 
+" Always keep 5 lines on screen while scolling
+set scrolloff=5
+set sidescrolloff=5
