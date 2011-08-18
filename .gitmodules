@@ -13,7 +13,7 @@
 [submodule "home/.vim/bundle/rvm"]
 	path = home/.vim/bundle/rvm
 	url = http://github.com/csexton/rvm.vim.git
-[submodule "home/.vim/repeat"]
+[submodule "home/.vim/bundle/repeat"]
 	path = home/.vim/bundle/repeat
 	url = http://github.com/tpope/vim-repeat.git
 [submodule "home/.vim/bundle/rails"]
@@ -58,9 +58,6 @@
 [submodule "home/.vim/bundle/supertab"]
 	path = home/.vim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "home/.vim/bundle/matchit"]
-	path = home/.vim/bundle/matchit
-	url = https://github.com/thenoseman/vim-matchit.git
 [submodule "home/.vim/bundle/fuzzyfinder"]
 	path = home/.vim/bundle/fuzzyfinder
 	url = https://github.com/vim-scripts/FuzzyFinder.git
@@ -139,3 +136,6 @@
 [submodule "home/.vim/bundle/HTML-AutoCloseTag"]
 	path = home/.vim/bundle/HTML-AutoCloseTag
 	url = https://github.com/vim-scripts/HTML-AutoCloseTag.git
+[submodule "home/.vim/bundle/vim-matchit"]
+	path = home/.vim/bundle/vim-matchit
+	url = git://github.com/thenoseman/vim-matchit.git
