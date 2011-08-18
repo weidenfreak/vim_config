@@ -15,7 +15,7 @@ Fork away!
 ## Current Plugins: ###
 + [FuzzyFinder](https://github.com/vim-scripts/FuzzyFinder) (,m)
 + [PHP-VIP](https://github.com/tobyS/vip)
-+ [matchit](https://github.com/javanthropus/vim-matchit)
++ [matchit](https://github.com/thenoseman/vim-matchit)
 + [xmledit](https://github.com/sukima/xmledit/)
 + [tabbar](https://github.com/thenoseman/TabBar) (Modified Hotkey)
 + [greplace](https://github.com/vim-scripts/greplace) (:Gsearch)
