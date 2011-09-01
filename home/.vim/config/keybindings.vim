@@ -50,22 +50,14 @@ nmap < <<CR>gv
 vmap > ><CR>gv
 vmap < <<CR>gv
 
-" Copied modified from https://gist.github.com/578787
-" Ctrl+Up, Ctrl+k moves line up
-nmap <C-Up> :m .-2<CR>
-nmap <C-k> :m .-2<CR>
-imap <C-Up> :m .-2<CR> 
-imap <C-k> :m .-2<CR>
-vmap <C-Up> :m .-2<CR> 
-vmap <C-k> :m .-2<CR>
 
-" Ctrl+Down, Ctrl+j moves line down
-nmap <C-Down> :m .+<CR> 
-nmap <C-j> :m .+<CR>
-imap <C-Down> :m .+<CR> 
-imap <C-j> :m .+<CR>
-vmap <C-Down> :m .+<CR> 
-vmap <C-j> :m .+<CR>
+" Move lines up/down even in visual mode
+nnoremap <silent> <C-Up> :<C-u>call MoveLineUp()<CR>
+nnoremap <silent> <C-Down> :<C-u>call MoveLineDown()<CR>
+inoremap <silent> <C-Up> <C-o>:<C-u>call MoveLineUp()<CR>
+inoremap <silent> <C-Down> <C-o>:<C-u>call MoveLineDown()<CR>
+vnoremap <silent> <C-Up> :<C-u>call MoveVisualUp()<CR>
+vnoremap <silent> <C-Down> :<C-u>call MoveVisualDown()<CR>
 
 "
 " Show Invisibles (http://vimcasts.org/episodes/show-invisibles/) 
