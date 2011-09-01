@@ -1,2 +1,2 @@
 " Abbreviations
-ia backgorund-color background-color
+iab backgorund background
