@@ -58,3 +58,6 @@ set norelativenumber
 " Always keep 5 lines on screen while scolling
 set scrolloff=5
 set sidescrolloff=5
+
+" Remove trailing whitespace
+au BufWritePre *.rb,*.haml.html :%s/\s\+$//e

@@ -26,8 +26,5 @@ endfun
 " These files are also Ruby.
 au BufRead,BufNewFile {Capfile,Gemfile,Rakefile,Thorfile,Vagrantfile,config.ru} set ft=ruby
 
-" Remove trailing whitespace
-au BufWritePre *.rb :%s/\s\+$//e
-
 " Specs can be name _scene.rb
 autocmd BufRead,BufNewFile *_scene.rb syn keyword rubyRspec describe context it specify it_should_behave_like before after setup subjectits shared_examples_for shared_context let | highlight def link rubyRspec Function
