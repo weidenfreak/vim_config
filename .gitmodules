@@ -91,9 +91,6 @@
 [submodule "home/.vim/bundle/vim-markdown-syntax"]
 	path = home/.vim/bundle/vim-markdown-syntax
 	url = https://github.com/plasticboy/vim-markdown
-[submodule "home/.vim/external/sparkup"]
-	path = home/.vim/external/sparkup
-	url = https://github.com/rstacruz/sparkup.git
 [submodule "home/.vim/bundle/indexed-search"]
 	path = home/.vim/bundle/indexed-search
 	url = https://github.com/vim-scripts/IndexedSearch
@@ -142,6 +139,3 @@
 [submodule "home/.vim/bundle/greplace.vim"]
 	path = home/.vim/bundle/greplace.vim
 	url = https://github.com/skwp/greplace.vim.git
-[submodule "home/.vim/bundle/html5-syntax-highlight"]
-	path = home/.vim/bundle/html5-syntax-highlight
-	url = https://github.com/othree/html5-syntax.vim.git

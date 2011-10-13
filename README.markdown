@@ -40,7 +40,6 @@ Fork away!
 + [Surround.vim](http://github.com/tpope/vim-surround "vim-surround at github")
 + [Syntastic](http://github.com/scrooloose/syntastic "syntastic at github")
 + [YankRing](http://github.com/chrismetcalf/vim-yankring "yankring at github")
-+ [Sparkup](https://github.com/rstacruz/sparkup)
 + [Supertab](https://github.com/ervandew/supertab)
 + [IndexedSearch](https://github.com/vim-scripts/IndexedSearch)
 + [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
