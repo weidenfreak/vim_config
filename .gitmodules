@@ -139,3 +139,6 @@
 [submodule "home/.vim/bundle/greplace.vim"]
 	path = home/.vim/bundle/greplace.vim
 	url = https://github.com/skwp/greplace.vim.git
+[submodule "home/.vim/bundle/html5-syntax"]
+	path = home/.vim/bundle/html5-syntax
+	url = https://github.com/developish/html5-syntax.vim.git
