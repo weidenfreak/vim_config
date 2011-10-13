@@ -51,6 +51,7 @@ Fork away!
 + [extradite](https://github.com/int3/vim-extradite) Extends fugitive with a very nice `git log`
 + [TailMinusF](https://github.com/matsuu/TailMinusF.git) for rails.vm `:Rlog`
 + [HTML-AutoCloseTag](https://github.com/vim-scripts/HTML-AutoCloseTag)
++ [html5-syntax](https://github.com/othree/html5-syntax.vim)
 
 ### Removed Plugins: ###
 + [Conque](http://github.com/rson/vim-conque "Conque at github")
