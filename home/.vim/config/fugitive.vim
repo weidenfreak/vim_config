@@ -1,10 +1,11 @@
-""""""""""""""""""""""""""""""""""""""""
-"" Fugitive-specific configuration
-""""""""""""""""""""""""""""""""""""""""
+" Fugitive-specific configuration
 
 " keybindings
 com Gs Gstatus
 com Gp Git push
+
+" Stop Tabbar when merging
+com Gd TbStop | Gdiff
 
 " Auto close fugitive buffers when I leave them
 " from http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/
