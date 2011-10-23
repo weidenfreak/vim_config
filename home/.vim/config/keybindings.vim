@@ -16,13 +16,13 @@ endif
 "
 let mapleader = ","
 
-" ;w saves a buffer
+" ,w saves a buffer
 map <Leader>w :w!<CR>
 
-" ;q closes a vim-window
+" ,q closes a vim-window
 map <Leader>q :q!<CR>
 
-" navigate among windows using ;[hjkl]
+" navigate among windows using ,[hjkl]
 map <Leader>h <C-W>h
 map <Leader>j <C-W>j
 map <Leader>k <C-W>k
@@ -77,3 +77,6 @@ nmap <Leader>x :bd<CR>:Tbbp<CR>
 
 " ,o closes all buffers but the current one
 nmap <Leader>o :BufOnly<CR> 
+
+" Switch between last two buffers
+nnoremap <leader><leader> <c-^>
