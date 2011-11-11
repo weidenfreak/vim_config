@@ -3,7 +3,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " iTerm2 => 256 colors
 " Set iTerm Profiles -> your Profile -> Terminal -> Report Terminal Type to xterm-256colors
-set t_Co=256
+au VimEnter * set t_Co=256
 
 colorscheme railscasts
 
