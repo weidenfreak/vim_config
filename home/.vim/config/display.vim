@@ -1,6 +1,9 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""
 "" loads display-related option (colorscheme, etc.)
 """""""""""""""""""""""""""""""""""""""""""""""""""
+" iTerm2 => 256 colors
+" Set iTerm Profiles -> your Profile -> Terminal -> Report Terminal Type to xterm-256colors
+set t_Co=256
 
 colorscheme railscasts
 
@@ -30,5 +33,3 @@ set statusline+=%{fugitive#statusline()}                      " git status
 set statusline+=%{exists('g:loaded_rvm')?rvm#statusline():''} " rvm status
 set statusline+=(%l,%c%V)\ %<%P                               " offset
 
-" iTerm2 => 256 colors
-set t_Co=256
