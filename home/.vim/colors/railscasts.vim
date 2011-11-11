@@ -49,6 +49,7 @@ highlight Normal                    guifg=#E6E1DC guibg=#111111
 highlight Cursor                    guifg=#000000 ctermfg=0 guibg=#FFFFFF ctermbg=15	
 highlight CursorLine                guibg=#000000 ctermbg=233 cterm=NONE
 
+highlight Directory                 guifg=#A5C261 gui=NONE
 highlight Comment                   guifg=#BC9458 ctermfg=180 gui=italic
 highlight Constant                  guifg=#6D9CBE ctermfg=73
 highlight Define                    guifg=#CC7833 ctermfg=173
@@ -95,3 +96,14 @@ highlight SpellBad                  guifg=#D70000 ctermfg=160 ctermbg=NONE cterm
 highlight SpellRare                 guifg=#D75F87 ctermfg=168 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 highlight SpellCap                  guifg=#D0D0FF ctermfg=189 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 highlight MatchParen                guifg=#FFFFFF ctermfg=15 guibg=#005f5f ctermbg=23
+
+" Popup Menu
+" ----------
+" normal item in popup
+hi Pmenu                     guifg=#F6F3E8 guibg=#444444 gui=NONE
+" selected item in popup
+hi PmenuSel                  guifg=#000000 guibg=#A5C261 gui=NONE
+" scrollbar in popup
+hi PMenuSbar                 guibg=#5A647E gui=NONE
+" thumb of the scrollbar in the popup
+hi PMenuThumb                guibg=#AAAAAA gui=NONE
