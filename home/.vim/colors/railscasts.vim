@@ -107,3 +107,5 @@ hi PmenuSel                  guifg=#000000 guibg=#A5C261 gui=NONE
 hi PMenuSbar                 guibg=#5A647E gui=NONE
 " thumb of the scrollbar in the popup
 hi PMenuThumb                guibg=#AAAAAA gui=NONE
+
+highlight rubyClass guifg=#CC7833 
