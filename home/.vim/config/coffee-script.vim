@@ -2,5 +2,5 @@
 " Setting for vim-coffee-script
 "
 
-" Autocompile Coffe Script
+" Autocompile Coffee Script
 autocmd BufWritePost *.coffee silent CoffeeMake! -b | cwindow
