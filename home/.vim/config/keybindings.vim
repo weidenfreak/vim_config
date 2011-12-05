@@ -80,3 +80,6 @@ nmap <Leader>o :BufOnly<CR>
 
 " Switch between last two buffers
 nnoremap <leader><leader> <c-^>
+
+" Remap X to delete last word in normal mode
+nmap X dBw<CR>x
