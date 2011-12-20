@@ -76,4 +76,4 @@ nmap <Leader>o :BufOnly<CR>
 nnoremap <leader><leader> <c-^>
 
 " Remap X to delete last word in normal mode
-nmap X dBw<CR>x
+nmap! X dbw
