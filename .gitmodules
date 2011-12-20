@@ -76,9 +76,6 @@
 [submodule "home/.vim/bundle/vim-javascript"]
 	path = home/.vim/bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
-[submodule "home/.vim/bundle/vim-autoclose"]
-	path = home/.vim/bundle/vim-autoclose
-	url = http://github.com/thenoseman/vim-autoclose.git
 [submodule "home/.vim/bundle/php-indenting-for-vim"]
 	path = home/.vim/bundle/php-indenting-for-vim
 	url = https://github.com/2072/PHP-Indenting-for-VIm.git
@@ -139,3 +136,6 @@
 [submodule "home/.vim/bundle/html5-syntax"]
 	path = home/.vim/bundle/html5-syntax
 	url = https://github.com/developish/html5-syntax.vim.git
+[submodule "home/.vim/bundle/vim-autoclose-townk"]
+	path = home/.vim/bundle/vim-autoclose-townk
+	url = https://github.com/Townk/vim-autoclose.git
