@@ -3,6 +3,7 @@
 "
 
 " Somehow needed:
+source ~/.vim/bundle/tlib/plugin/02tlib.vim
 source ~/.vim/bundle/snipmate/autoload/snipMate.vim
 
 " path to 'private' snippets
