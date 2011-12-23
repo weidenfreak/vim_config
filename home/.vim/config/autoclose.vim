@@ -1,4 +1,4 @@
 "
 " Config for vim-autoclose
 "
-let g:AutoClosePairs = AutoClose#ParsePairs("|| () [] {} <> «» ` \" '")
+let g:AutoClosePairs = AutoClose#ParsePairs("|| () [] {} «» ` \" '")
