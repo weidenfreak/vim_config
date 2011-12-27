@@ -23,6 +23,11 @@ fun! LoadRubyKeybindings()
    set nofoldenable
 endfun
 
+fun! RubyGemfilePathLocal()
+  normal ^^wl"ayiwA, :path => "../"apA
+endfun
+command! Gp call RubyGemfilePathLocal()
+
 " These files are also Ruby.
 au BufRead,BufNewFile {Capfile,Gemfile,Rakefile,Thorfile,Vagrantfile,config.ru} set ft=ruby
 
