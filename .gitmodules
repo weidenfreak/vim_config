@@ -121,9 +121,6 @@
 [submodule "home/.vim/bundle/vim-extradite"]
 	path = home/.vim/bundle/vim-extradite
 	url = https://github.com/int3/vim-extradite.git
-[submodule "home/.vim/bundle/HTML-AutoCloseTag"]
-	path = home/.vim/bundle/HTML-AutoCloseTag
-	url = https://github.com/vim-scripts/HTML-AutoCloseTag.git
 [submodule "home/.vim/bundle/vim-matchit"]
 	path = home/.vim/bundle/vim-matchit
 	url = git://github.com/thenoseman/vim-matchit.git
