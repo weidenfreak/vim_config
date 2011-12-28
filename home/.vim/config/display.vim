@@ -13,7 +13,7 @@ set cul
 "
 " New Font
 "
-set guifont=Inconsolata-dz:h12.00
+set guifont=Monaco:h12.00
 
 set laststatus=2   " always display a status line
 set number         " show line numbers
