@@ -110,6 +110,8 @@ hi Statement                 guifg=#CC7833 gui=NONE
 "rubyString
 hi String                    guifg=#A5C261
 
+hi NonText                   guifg=#777777
+
 hi Title                     guifg=#FFFFFF
 
 "rubyConstant
