@@ -64,7 +64,7 @@ highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
 " Define here AGAIN
-nmap <Leader>m :FufCoverageFile<CR>
+nmap <Leader>f :FufCoverageFile<CR>
 
 " ,x closes buffer and jumps to previous one
 nmap <Leader>x :bd<CR>:Tbbp<CR> 
