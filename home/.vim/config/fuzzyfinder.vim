@@ -2,7 +2,7 @@
 " Fuzzy Finder
 "
 " Also in keybindings.vim (see :scriptnames)
-nmap <Leader>f :FufCoverageFile<CR>
+nmap <Leader>u :FufCoverageFile<CR>
 
 " More Excludes
 " copied from home/.vim/bundle/fuzzyfinder/plugin/fuf.vim
