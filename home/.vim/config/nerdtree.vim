@@ -9,4 +9,4 @@ let NERDTreeChDirMode=2
 let NERDTreeShowBookmarks=1
 map <Leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree
