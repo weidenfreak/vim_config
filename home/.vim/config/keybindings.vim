@@ -46,12 +46,12 @@ vmap < <<CR>gv
 
 
 " Move lines up/down even in visual mode
-nnoremap <silent> <C-Up> :<C-u>call MoveLineUp()<CR>
-nnoremap <silent> <C-Down> :<C-u>call MoveLineDown()<CR>
-inoremap <silent> <C-Up> <C-o>:<C-u>call MoveLineUp()<CR>
-inoremap <silent> <C-Down> <C-o>:<C-u>call MoveLineDown()<CR>
-vnoremap <silent> <C-Up> :<C-u>call MoveVisualUp()<CR>
-vnoremap <silent> <C-Down> :<C-u>call MoveVisualDown()<CR>
+nnoremap <silent> <M-Up> :<C-u>call MoveLineUp()<CR>
+nnoremap <silent> <M-Down> :<C-u>call MoveLineDown()<CR>
+inoremap <silent> <M-Up> <C-o>:<C-u>call MoveLineUp()<CR>
+inoremap <silent> <M-Down> <C-o>:<C-u>call MoveLineDown()<CR>
+vnoremap <silent> <M-Up> :<C-u>call MoveVisualUp()<CR>
+vnoremap <silent> <M-Down> :<C-u>call MoveVisualDown()<CR>
 
 "
 " Show Invisibles (http://vimcasts.org/episodes/show-invisibles/) 
