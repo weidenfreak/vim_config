@@ -45,6 +45,12 @@ set softtabstop=2
 set tabstop=2
 set shiftwidth=2
 
+" expand current split
+map + 800<C-W>+
+
+" minimize current split
+map _ <C-W>=
+
 "
 " Dont break lines
 "
