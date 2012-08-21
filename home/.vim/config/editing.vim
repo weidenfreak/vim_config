@@ -66,8 +66,8 @@ set scrolloff=5
 set sidescrolloff=5
 
 " insert newlines above/below the current line
-map <S-Enter> O<Esc>j
-map <CR> o<Esc>k
+"map <S-Enter> O<Esc>j
+"map <CR> o<Esc>k
 
 " Remove trailing whitespace
 au BufWritePre *.rb,*.haml,*.sass :%s/\s\+$//e
