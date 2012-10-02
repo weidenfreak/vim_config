@@ -22,20 +22,6 @@ fun! NERDTreeSmartToggle()
   endif
 endfun
 
-" Close all open buffers on entering a window if the only
-" buffer that's left is the NERDTree buffer
-" Stolen from http://stackoverflow.com/a/5403847/171364 (janus repo)
-fun! s:CloseIfOnlyNerdTreeLeft()
-  if exists("t:NERDTreeBufName")
-    if bufwinnr(t:NERDTreeBufName) != -1
-      if winnr("$") == 1
-        q
-      endif
-    endif
-  endif
-endfunction
-autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
-
 set timeoutlen=250
 
 " let NERDTree change my working directory if its root changes.
